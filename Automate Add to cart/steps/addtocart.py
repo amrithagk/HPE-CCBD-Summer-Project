@@ -1,8 +1,6 @@
 from behave import *
 from selenium import webdriver
 
-#continue with webdriver implementation
-
 @given(u'User opens www.amazon.in')
 def step_impl(context):
     raise NotImplementedError(u'STEP: Given User opens www.amazon.in')
