@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 @given(u'User launches Google Chrome web browser')
 def step_impl(context):
     context.driver = webdriver.Chrome()
+    context.driver.implicitly_wait(40)
 
 
 @given('User opens www.amazon.in')
@@ -27,6 +28,7 @@ def step_impl(context, password):
 
 
 """
+#Check if user has logged in successfully
 @when(u'user logs in successfully')
 def step_impl(context):
     text = context.driver.find_element(By.XPATH, "//*[@id='nav-link-accountList-nav-line-1']").text()
@@ -37,7 +39,7 @@ def step_impl(context):
 
 @then(u'User searches for required item')
 def step_impl(context):
-    search_box = context.driver.find_element(By.ID, 'twotabsearchtextbox')
+    search_box = context.driver.find_element(By.ID, "twotabsearchtextbox")
     search_box.send_keys("SONY 55inch TV")
     context.driver.find_element(By.ID, 'nav-search-submit-button').click() #click on the search icon
 
