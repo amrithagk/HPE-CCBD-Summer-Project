@@ -41,10 +41,12 @@ def step_impl(context):
     search_box.send_keys("SONY 55inch TV")
     context.driver.find_element(By.ID, 'nav-search-submit-button').click() #click on the search icon
 
-
+"""
 @then(u'Clicks on the desired item')
 def step_impl(context):
     assert True
+
+"""
 
 
 @then(u'Adds the item to the shopping cart')

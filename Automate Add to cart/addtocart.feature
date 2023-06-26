@@ -6,7 +6,7 @@ Feature: Add to cart in amazon.in
     And user enters password "<password>"
     #And user logs in successfully
     Then User searches for required item
-    And Clicks on the desired item
+    #And Clicks on the desired item
     And Adds the item to the shopping cart
 
     Examples:
