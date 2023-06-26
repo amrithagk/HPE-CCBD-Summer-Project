@@ -1,7 +1,14 @@
-Feature: Automatically login to e-commerce website and add an item to the shopping cart
-  Scenario: Add to cart in amazon.in
-    Given User opens www.amazon.in
-    And user logs in to their account successfully
-    When User searches for required item
+Feature: Add to cart in amazon.in
+  Scenario Outline: Login to amazon.in website and add an item to the shopping cart
+    Given User launches Google Chrome web browser
+    And User opens www.amazon.in
+    When user enters mobile number "<mobileno>"
+    And user enters password "<password>"
+    #And user logs in successfully
+    Then User searches for required item
     And Clicks on the desired item
-    Then Add the item to the shopping cart
+    And Adds the item to the shopping cart
+
+    Examples:
+      | mobileno | password |
+      |8762671367| amaZon7@!|
