@@ -28,16 +28,6 @@ def step_impl(context, password):
     continue_button.click()
 
 
-"""
-#Check if user has logged in successfully
-@when(u'user logs in successfully')
-def step_impl(context):
-    text = context.driver.find_element(By.XPATH, "//*[@id='nav-link-accountList-nav-line-1']").text()
-    print(text)
-    assert text == "Hello, Amritha"
-"""
-
-
 @then(u'User searches for required item')
 def step_impl(context):
     search_box = context.driver.find_element(By.ID, "twotabsearchtextbox")
@@ -55,4 +45,3 @@ def step_impl(context):
 def step_impl(context):
     context.driver.find_element(By.ID, "add-to-cart-button").click()
     time.sleep(10)
-    context.driver.close()
