@@ -8,6 +8,7 @@ Feature: Add to cart in amazon.in
     Then User searches for required item
     And Clicks on the desired item
     And Adds the item to the shopping cart
+    And Displays the offers
 
     Examples:
       | mobileno | password |
