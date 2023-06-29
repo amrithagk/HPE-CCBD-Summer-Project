@@ -5,5 +5,7 @@ Feature: Search for a product on amazon
     And search for the "SONY 55inch TV"
     And click on search button
     And find the third product
+    And fetch price of the product
+    And fetch the description of product
     And click add to cart button
     And close browser
