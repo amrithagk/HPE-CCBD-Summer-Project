@@ -22,7 +22,7 @@ Feature: Login to Amazon e commerce and product purchase
     And the user navigates to the reviews section
     Then the user should be able to view the reviews
   
-    And close browser
+    
 
   Examples:
       | mobileno | password |
