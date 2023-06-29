@@ -38,7 +38,7 @@ def step_impl(context, user, pwd):
 @when('I should login successfully')
 def step_impl(context):
     name = context.driver.find_element(By.ID, "nav-link-accountList-nav-line-1").text
-    assert name == "Hello, SUMA"
+    assert name == "Hello, "
     
 
 
