@@ -9,7 +9,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-@when('fetch price of the product')
+@then('fetch price of the product')
 def step_impl(context):
     price = context.driver.find_element("xpath", " //body/div[@id='a-page']/div[@id='dp']/div[@id='dp-container']/div[@id='ppd']/div[@id='centerCol']/div[@id='apex_desktop']/div[@id='corePriceDisplay_desktop_feature_div']/div[1]/span[2]/span[2]/span[2]")
     context.driver.execute_script("arguments[0].scrollIntoView();", price)
@@ -18,7 +18,7 @@ def step_impl(context):
     print(product_price)
 
 
-@when('fetch the description of product')
+@then('fetch the description of product')
 def step_impl(context):
     element=context.driver.find_element("xpath"," //h1[contains(text(),'About this item')]")
     context.driver.execute_script("arguments[0].scrollIntoView();",element)
