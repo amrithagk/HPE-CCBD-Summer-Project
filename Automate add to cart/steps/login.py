@@ -35,10 +35,10 @@ def step_impl(context, user, pwd):
     pwd_input.send_keys(pwd)
     context.driver.find_element(By.ID, "signInSubmit").click()
 
-@when('I should login successfully')
-def step_impl(context):
+@when('I should login successfully with "<username>"')
+def step_impl(context, username):
     name = context.driver.find_element(By.ID, "nav-link-accountList-nav-line-1").text
-    assert name == "Hello, "
+    assert name == "Hello, {username}"
     
 
 

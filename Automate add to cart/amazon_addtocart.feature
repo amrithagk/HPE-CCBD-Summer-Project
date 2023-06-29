@@ -8,7 +8,7 @@ Feature: Login to Amazon e commerce and product purchase
   
     And I am on the Amazon e-commerce site
     And I log in with valid phone number or email "<mobileno>" and password "<password>"
-    And I should login successfully
+    And I should login successfully with "<username>"
   
     And search for the "SONY 55inch TV"
     And click on search button
@@ -24,7 +24,7 @@ Feature: Login to Amazon e commerce and product purchase
     And the user should be able to view the reviews
 
     Examples:
-        | mobileno | password |
-        | | |
+        | mobileno | password |username|
+        | | | |
   
 
