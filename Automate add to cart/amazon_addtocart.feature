@@ -14,5 +14,8 @@ Scenario: Get price, description, and offers for a specific TV
   When I click on the "SONY 55inch TV"
   Then I should be redirected to the product page
   
+  And Displays the offers
+    
     And the user navigates to the reviews section
     Then the user should be able to view the reviews
+
