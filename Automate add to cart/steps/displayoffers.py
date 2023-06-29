@@ -16,9 +16,8 @@ def step_impl(context):
         offers = context.driver.find_element(By.XPATH, "//a[@class='a-size-base a-link-emphasis vsx-offers-count']")
         context.driver.execute_script("arguments[0].click();", offers)
         
-        time.sleep(10)
-        context.driver.close()
-
+        time.sleep(5)
+        
     except NoSuchAttributeException or NoSuchElementException:
 
         print("Exception occurred")
