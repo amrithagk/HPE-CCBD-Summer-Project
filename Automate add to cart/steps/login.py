@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 @given('I launch Chrome browser')
 def step_impl(context):
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
 
 
 @when('I visit amazon website')
@@ -35,10 +36,10 @@ def step_impl(context, user, pwd):
     pwd_input.send_keys(pwd)
     context.driver.find_element(By.ID, "signInSubmit").click()
 
-@when('I should login successfully with "<username>"')
+@when('I should login successfully with "{username}"')
 def step_impl(context, username):
     name = context.driver.find_element(By.ID, "nav-link-accountList-nav-line-1").text
-    assert name == "Hello, {username}"
+    assert name == "Hello, {0}".format(username)
     
 
 

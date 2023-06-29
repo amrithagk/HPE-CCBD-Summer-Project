@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-@when('the user navigates to the reviews section')
+@then('the user navigates to the reviews section')
 def navigates_to_reviews(context):
     context.driver.switch_to.window(context.driver.window_handles[-1])
     try:
@@ -18,7 +18,7 @@ def navigates_to_reviews(context):
     except:
         context.driver.quit()
 
-@when('the user should be able to view the reviews')
+@then('the user should be able to view the reviews')
 def views_reviews(context):
     try:
         WebDriverWait(context.driver, 10).until(
