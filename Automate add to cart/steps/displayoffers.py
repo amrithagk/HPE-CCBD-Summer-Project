@@ -15,8 +15,8 @@ def step_impl(context):
         #returns all 3 cards in carousel, hence access the bank offers by indexing the array
         offers = context.driver.find_element(By.XPATH, "//a[@class='a-size-base a-link-emphasis vsx-offers-count']")
         context.driver.execute_script("arguments[0].click();", offers)
-        
         time.sleep(5)
+        context.driver.find_element(By.XPATH, "//i[@class='a-icon a-icon-close-white a-icon-medium twister-plus-close-button']")
         
     except NoSuchAttributeException or NoSuchElementException:
 
