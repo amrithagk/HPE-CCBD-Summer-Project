@@ -12,10 +12,10 @@ Feature: Login to Amazon e commerce and product purchase
   
     And search for the "SONY 55inch TV"
     And click on search button
-    And find the third product
-    And fetch price of the product
-    And fetch the description of product
-    And click add to cart button
+    Then find the third product
+    Then fetch price of the product
+    Then fetch the description of product
+    Then click add to cart button
   
     And Displays the offers
       
