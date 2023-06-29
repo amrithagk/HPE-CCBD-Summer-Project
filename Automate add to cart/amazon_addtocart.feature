@@ -23,3 +23,5 @@ Scenario: Get price, description, and offers for a specific TV
   And the user navigates to the reviews section
   Then the user should be able to view the reviews
 
+  And close browser
+
