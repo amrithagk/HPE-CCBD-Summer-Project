@@ -25,6 +25,6 @@ Feature: Login to Amazon e commerce and product purchase
 
     Examples:
         | mobileno | password |username|
-        | | | |
+        ||||
   
 
