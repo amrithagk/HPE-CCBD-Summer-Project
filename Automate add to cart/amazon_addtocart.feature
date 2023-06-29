@@ -13,7 +13,7 @@ Feature: Login to Amazon e commerce and product purchase
     And search for the "SONY 55inch TV"
     And click on search button
 
-    And find the third product
+    Then find the third product
     And fetch price of the product
     And fetch the description of product
     And click add to cart button
@@ -21,10 +21,10 @@ Feature: Login to Amazon e commerce and product purchase
     And Displays the offers
       
     And the user navigates to the reviews section
-    Then the user should be able to view the reviews
+    And the user should be able to view the reviews
 
     Examples:
         | mobileno | password |
-        | ||
+        | | |
   
 
