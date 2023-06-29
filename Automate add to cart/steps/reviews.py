@@ -18,7 +18,7 @@ def navigates_to_reviews(context):
     except:
         context.driver.quit()
 
-@then('the user should be able to view the reviews')
+@when('the user should be able to view the reviews')
 def views_reviews(context):
     try:
         WebDriverWait(context.driver, 10).until(
