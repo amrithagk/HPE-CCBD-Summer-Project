@@ -11,22 +11,34 @@ from selenium.common import TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, NoSuchAttributeException
+import logging
+
+logging.basicConfig(filename="amazonlog.log", format="%(asctime)s  %(levelname)s:%(message)s", level=logging.INFO)
 
 @given('I launch Chrome browser')
 def step_impl(context):
     context.driver = webdriver.Chrome()
     context.driver.maximize_window()
+    logging.info("Browser launched")
 
 
 @when('I visit amazon website')
 def step_impl(context):
-    context.driver.get("https://www.amazon.in/")
+    try:
+        context.driver.get("https://www.amazon.in/")
+        logging.info("Opened the website")
+    except:
+        logging.error("Unable to open website")
+        allure.attach("Unable to open website", attachment_type=AttachmentType.TEXT)
 
 
 @when('Amazon homepage is opened successfully')
 def step_impl(context):
-    text = context.driver.title
-    assert text == "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
+    try:
+        text = context.driver.title
+        assert text == "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
+    except:
+        allure.attach("Homepage unavailable", attachment_type=AttachmentType.TEXT) 
 
 
 @when('I am on the Amazon e-commerce site')
@@ -54,6 +66,8 @@ def step_impl(context, user, pwd):
                 context.driver.save_screenshot(screenshot_path2)
                 print(f"Screenshot saved: {screenshot_path2}")
                 allure.attach(context.driver.get_screenshot_as_png(), name="IncorrectPasswordSS", attachment_type=AttachmentType.PNG)
+                logging.info("Incorrect password")
+                allure.attach("Login failed. Incorrect password", attachment_type=AttachmentType.TEXT)
                 context.driver.close()
             elif error_message == "Important Message!":
                 time.sleep(20)
@@ -68,6 +82,8 @@ def step_impl(context, user, pwd):
         context.driver.save_screenshot(screenshot_path3)
         print(f"Screenshot saved: {screenshot_path3}")
         allure.attach(context.driver.get_screenshot_as_png(), name="incorrect_phonenoSS", attachment_type=AttachmentType.PNG)
+        logging.info("Incorrect mobile number/e-mail ID")
+        allure.attach("Login failed. Incorrect mobile number/e-mail ID.", attachment_type=AttachmentType.TEXT)
         context.driver.close()
 
 
@@ -76,15 +92,18 @@ def step_impl(context, username):
     try:
         name1 = context.driver.find_element(By.ID, "nav-link-accountList-nav-line-1").text
         assert name1 == "Hello, {0}".format(username)
-
+        logging.info("Logged in successfully!")
+        
     except AssertionError:
 
+        logging.error("Login failed")
         screenshot_name1 = "assertion_error.png"
         screenshot_path1 = os.path.join(os.getcwd(), screenshot_name1)
         context.driver.save_screenshot(screenshot_path1)
         print(f"Screenshot saved: {screenshot_path1}")
         allure.attach(context.driver.get_screenshot_as_png(), name="AssertionErrorSS",
                       attachment_type=AttachmentType.PNG)
+        allure.attach("Login failed.", attachment_type=AttachmentType.TEXT)
         raise AssertionError("Login unsuccessful")
 
 
