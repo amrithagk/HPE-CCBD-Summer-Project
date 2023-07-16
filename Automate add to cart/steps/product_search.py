@@ -17,7 +17,11 @@ screenshot_dir = os.path.join(current_dir, "screenshots")
 @when('search for the "{product}"')
     def step_impl(context,product):
     context.driver.find_element(By.ID, "twotabsearchtextbox").send_keys(product)
-    context.driver.find_element(By.ID, "nav-search-submit-button").click()
+
+
+@when('click on search button')
+def step_impl(context):
+    context.driver.find_element(By.ID,"nav-search-submit-button").click()
     try:
         pass
     except:
@@ -27,12 +31,6 @@ screenshot_dir = os.path.join(current_dir, "screenshots")
         context.driver.save_screenshot(screenshot_path3)
     if not os.path.exists(screenshot_dir):
         os.makedirs(screenshot_dir)
-    
-
-
-@when('click on search button')
-def step_impl(context):
-    context.driver.find_element(By.ID,"nav-search-submit-button").click()
 
 
 @then('find the third product')
