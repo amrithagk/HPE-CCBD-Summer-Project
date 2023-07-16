@@ -78,7 +78,7 @@ def step_impl(context, username):
         assert name1 == "Hello, {0}".format(username)
 
     except AssertionError:
-        # Test case failed, capture screenshot to allure report
+
         screenshot_name1 = "assertion_error.png"
         screenshot_path1 = os.path.join(os.getcwd(), screenshot_name1)
         context.driver.save_screenshot(screenshot_path1)
