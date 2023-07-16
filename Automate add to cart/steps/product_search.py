@@ -7,11 +7,27 @@ from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import os
+current_dir = os.path.dirname(os.path.realpath(__file__))
+
+
+screenshot_dir = os.path.join(current_dir, "screenshots")
 
 
 @when('search for the "{product}"')
 def step_impl(context,product):
-    context.driver.find_element(By.ID,"twotabsearchtextbox").send_keys(product)
+    def step_impl(context):
+    context.driver.find_element(By.ID, "nav-search-submit-button").click()
+    try:
+        pass
+    except:
+        assert "No results for" in context.driver.page_source
+        time.sleep(10)
+        screenshot_path3 = os.path.join(screenshot_dir, "unsuccessful_search.png")
+        context.driver.save_screenshot(screenshot_path3)
+    if not os.path.exists(screenshot_dir):
+        os.makedirs(screenshot_dir)
+    
 
 
 @when('click on search button')
