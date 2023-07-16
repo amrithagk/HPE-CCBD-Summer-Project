@@ -1,0 +1,534 @@
+2023-07-13 01:20:44,560  ERROR:Login failed
+2023-07-13 01:22:07,739  ERROR:Login failed
+2023-07-13 01:24:12,941  ERROR:Login failed
+2023-07-13 01:28:28,713  ERROR:Login failed
+2023-07-13 01:31:04,348  ERROR:Login failed
+2023-07-13 01:32:22,333  ERROR:Couldn't open website
+2023-07-13 01:34:41,418  ERROR:Couldn't open website
+2023-07-13 01:37:49,021  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-13 01:37:49,022  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-13 01:37:49,022  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-13 01:37:49,022  DEBUG:format 'I am on the Amazon e-commerce site' -> 'I am on the Amazon e-commerce site'
+2023-07-13 01:37:49,023  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-13 01:37:49,023  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-13 01:37:49,023  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-13 01:37:49,024  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-13 01:37:49,024  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-13 01:37:49,024  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-13 01:37:49,025  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-13 01:37:49,026  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-13 01:37:49,026  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-13 01:37:52,921  ERROR:Login failed
+2023-07-13 01:43:12,461  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-13 01:43:12,462  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-13 01:43:12,462  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-13 01:43:12,463  DEBUG:format 'I am on the Amazon e-commerce site' -> 'I am on the Amazon e-commerce site'
+2023-07-13 01:43:12,463  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-13 01:43:12,463  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-13 01:43:12,464  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-13 01:43:12,464  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-13 01:43:12,465  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-13 01:43:12,465  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-13 01:43:12,465  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-13 01:43:12,467  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-13 01:43:12,467  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-14 23:02:18,041  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-14 23:02:18,042  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-14 23:02:18,042  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-14 23:02:18,042  DEBUG:format 'I am on the Amazon e-commerce site' -> 'I am on the Amazon e-commerce site'
+2023-07-14 23:02:18,043  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-14 23:02:18,043  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-14 23:02:18,144  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-14 23:02:18,144  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-14 23:02:18,147  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-14 23:02:18,148  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-14 23:02:18,148  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-14 23:02:18,156  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-14 23:02:18,157  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-14 23:04:15,781  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-14 23:04:15,781  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-14 23:04:15,781  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-14 23:04:15,782  DEBUG:format 'I am on the Amazon e-commerce site' -> 'I am on the Amazon e-commerce site'
+2023-07-14 23:04:15,782  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-14 23:04:15,782  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-14 23:04:15,783  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-14 23:04:15,783  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-14 23:04:15,784  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-14 23:04:15,784  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-14 23:04:15,785  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-14 23:04:15,786  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-14 23:04:15,786  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-14 23:04:26,258  ERROR:Logged in successfully!
+2023-07-14 23:05:03,290  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-14 23:05:03,291  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-14 23:05:03,291  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-14 23:05:03,291  DEBUG:format 'I am on the Amazon e-commerce site' -> 'I am on the Amazon e-commerce site'
+2023-07-14 23:05:03,291  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-14 23:05:03,292  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-14 23:05:03,293  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-14 23:05:03,293  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-14 23:05:03,294  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-14 23:05:03,295  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-14 23:05:03,295  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-14 23:05:03,298  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-14 23:05:03,298  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-14 23:05:55,595  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-14 23:05:55,595  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-14 23:05:55,595  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-14 23:05:55,595  DEBUG:format 'I am on the Amazon e-commerce site' -> 'I am on the Amazon e-commerce site'
+2023-07-14 23:05:55,596  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-14 23:05:55,596  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-14 23:05:55,597  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-14 23:05:55,597  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-14 23:05:55,597  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-14 23:05:55,597  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-14 23:05:55,598  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-14 23:05:55,599  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-14 23:05:55,600  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-14 23:06:07,735  INFO:Logged in successfully!
+2023-07-15 15:03:09,590  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-15 15:03:09,606  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-15 15:03:09,607  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-15 15:03:09,607  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-15 15:03:09,608  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-15 15:03:09,615  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-15 15:03:09,616  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-15 15:03:09,617  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-15 15:03:09,618  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-15 15:03:09,618  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-15 15:03:09,623  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-15 15:03:09,624  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-15 15:03:13,213  INFO:Browser launched
+2023-07-15 15:03:15,487  INFO:Opened the website
+2023-07-15 15:03:22,010  INFO:Logged in successfully!
+2023-07-15 15:05:54,931  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-15 15:05:54,932  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-15 15:05:54,932  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-15 15:05:54,933  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-15 15:05:54,933  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-15 15:05:54,939  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-15 15:05:54,940  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-15 15:05:54,945  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-15 15:05:54,946  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-15 15:05:54,947  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-15 15:05:54,961  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-15 15:05:54,962  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-15 15:05:56,961  INFO:Browser launched
+2023-07-15 15:05:59,277  INFO:Opened the website
+2023-07-15 15:06:05,502  INFO:Logged in successfully!
+2023-07-15 15:08:14,504  DEBUG:format 'I launch Chrome browser' -> 'I launch Chrome browser'
+2023-07-15 15:08:14,504  DEBUG:format 'I visit amazon website' -> 'I visit amazon website'
+2023-07-15 15:08:14,504  DEBUG:format 'Amazon homepage is opened successfully' -> 'Amazon homepage is opened successfully'
+2023-07-15 15:08:14,504  DEBUG:format 'I log in with valid phone number or email "{user}" and password "{pwd}"' -> 'I log in with valid phone number or email "(?P<user>.+?)" and password "(?P<pwd>.+?)"'
+2023-07-15 15:08:14,505  DEBUG:format 'I should login successfully with "{username}"' -> 'I should login successfully with "(?P<username>.+?)"'
+2023-07-15 15:08:14,506  DEBUG:format 'fetch price of the product' -> 'fetch price of the product'
+2023-07-15 15:08:14,506  DEBUG:format 'fetch the description of product' -> 'fetch the description of product'
+2023-07-15 15:08:14,506  DEBUG:format 'search for the "{product}"' -> 'search for the "(?P<product>.+?)"'
+2023-07-15 15:08:14,507  DEBUG:format 'click on search button' -> 'click on search button'
+2023-07-15 15:08:14,507  DEBUG:format 'find the third product' -> 'find the third product'
+2023-07-15 15:08:14,508  DEBUG:format 'the user navigates to the reviews section' -> 'the user navigates to the reviews section'
+2023-07-15 15:08:14,509  DEBUG:format 'the user should be able to view the reviews' -> 'the user should be able to view the reviews'
+2023-07-15 15:08:16,620  INFO:Browser launched
+2023-07-15 15:08:18,824  INFO:Opened the website
+2023-07-15 15:08:22,413  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0086A813+48355]
+	(No symbol) [0x007FC4B1]
+	(No symbol) [0x00705358]
+	(No symbol) [0x007309A5]
+	(No symbol) [0x00730B3B]
+	(No symbol) [0x0075E232]
+	(No symbol) [0x0074A784]
+	(No symbol) [0x0075C922]
+	(No symbol) [0x0074A536]
+	(No symbol) [0x007282DC]
+	(No symbol) [0x007293DD]
+	GetHandleVerifier [0x00ACAABD+2539405]
+	GetHandleVerifier [0x00B0A78F+2800735]
+	GetHandleVerifier [0x00B0456C+2775612]
+	GetHandleVerifier [0x008F51E0+616112]
+	(No symbol) [0x00805F8C]
+	(No symbol) [0x00802328]
+	(No symbol) [0x0080240B]
+	(No symbol) [0x007F4FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-15 15:08:24,255  INFO:Browser launched
+2023-07-15 15:08:26,864  INFO:Opened the website
+2023-07-15 15:08:33,017  INFO:Browser launched
+2023-07-15 15:08:35,459  INFO:Opened the website
+2023-07-15 15:08:42,595  ERROR:Login failed
+2023-07-15 15:10:07,635  INFO:Browser launched
+2023-07-15 15:10:10,362  INFO:Opened the website
+2023-07-15 15:10:16,876  INFO:Logged in successfully!
+2023-07-15 15:52:36,166  INFO:Browser launched
+2023-07-15 15:52:38,602  INFO:Opened the website
+2023-07-15 15:52:41,663  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0086A813+48355]
+	(No symbol) [0x007FC4B1]
+	(No symbol) [0x00705358]
+	(No symbol) [0x007309A5]
+	(No symbol) [0x00730B3B]
+	(No symbol) [0x0075E232]
+	(No symbol) [0x0074A784]
+	(No symbol) [0x0075C922]
+	(No symbol) [0x0074A536]
+	(No symbol) [0x007282DC]
+	(No symbol) [0x007293DD]
+	GetHandleVerifier [0x00ACAABD+2539405]
+	GetHandleVerifier [0x00B0A78F+2800735]
+	GetHandleVerifier [0x00B0456C+2775612]
+	GetHandleVerifier [0x008F51E0+616112]
+	(No symbol) [0x00805F8C]
+	(No symbol) [0x00802328]
+	(No symbol) [0x0080240B]
+	(No symbol) [0x007F4FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-15 15:52:41,681  INFO:Incorrect password
+2023-07-15 15:52:41,682  ERROR:name is out of scope
+2023-07-15 15:52:41,697  INFO:Couldn't locate search box
+2023-07-15 15:52:41,711  INFO:Couldn't search for the product
+2023-07-15 15:52:41,736  ERROR:Unable to open new tab
+2023-07-15 15:52:43,673  INFO:Browser launched
+2023-07-15 15:52:45,959  INFO:Opened the website
+2023-07-15 15:52:51,383  INFO:Incorrect password
+2023-07-15 15:52:51,383  ERROR:name is out of scope
+2023-07-15 15:52:51,405  INFO:Couldn't locate search box
+2023-07-15 15:52:51,426  INFO:Couldn't search for the product
+2023-07-15 15:52:51,460  ERROR:Unable to open new tab
+2023-07-15 15:52:53,624  INFO:Browser launched
+2023-07-15 15:52:55,870  INFO:Opened the website
+2023-07-15 15:53:02,910  ERROR:Login failed
+2023-07-15 15:53:03,234  INFO:Located search box
+2023-07-15 15:53:06,268  INFO:Clicked on search
+2023-07-15 15:53:27,464  INFO:Displayed price
+2023-07-15 15:53:37,626  INFO:Displayed product info
+2023-07-15 15:53:54,024  INFO:Displayed offers
+2023-07-15 15:54:06,041  INFO:Navigated to reviews section
+2023-07-15 15:54:16,848  INFO:Displayed reviews
+2023-07-15 15:54:16,849  INFO:Test completed
+2023-07-15 15:54:25,456  INFO:Browser launched
+2023-07-15 15:54:27,688  INFO:Opened the website
+2023-07-15 15:54:34,430  INFO:Logged in successfully!
+2023-07-15 15:54:34,770  INFO:Located search box
+2023-07-15 15:54:37,999  INFO:Clicked on search
+2023-07-15 15:54:57,303  INFO:Displayed price
+2023-07-15 15:55:07,578  INFO:Displayed product info
+2023-07-15 22:15:35,674  INFO:Browser launched
+2023-07-15 22:15:38,121  INFO:Opened the website
+2023-07-15 22:15:40,099  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00D9A813+48355]
+	(No symbol) [0x00D2C4B1]
+	(No symbol) [0x00C35358]
+	(No symbol) [0x00C609A5]
+	(No symbol) [0x00C60B3B]
+	(No symbol) [0x00C8E232]
+	(No symbol) [0x00C7A784]
+	(No symbol) [0x00C8C922]
+	(No symbol) [0x00C7A536]
+	(No symbol) [0x00C582DC]
+	(No symbol) [0x00C593DD]
+	GetHandleVerifier [0x00FFAABD+2539405]
+	GetHandleVerifier [0x0103A78F+2800735]
+	GetHandleVerifier [0x0103456C+2775612]
+	GetHandleVerifier [0x00E251E0+616112]
+	(No symbol) [0x00D35F8C]
+	(No symbol) [0x00D32328]
+	(No symbol) [0x00D3240B]
+	(No symbol) [0x00D24FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-15 22:15:40,110  INFO:Incorrect password
+2023-07-15 22:15:40,126  INFO:Test completed
+2023-07-15 22:15:40,127  INFO:Generating allure report
+2023-07-15 22:27:33,272  INFO:Browser launched
+2023-07-15 22:27:35,480  INFO:Opened the website
+2023-07-15 22:27:37,479  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0037A813+48355]
+	(No symbol) [0x0030C4B1]
+	(No symbol) [0x00215358]
+	(No symbol) [0x002409A5]
+	(No symbol) [0x00240B3B]
+	(No symbol) [0x0026E232]
+	(No symbol) [0x0025A784]
+	(No symbol) [0x0026C922]
+	(No symbol) [0x0025A536]
+	(No symbol) [0x002382DC]
+	(No symbol) [0x002393DD]
+	GetHandleVerifier [0x005DAABD+2539405]
+	GetHandleVerifier [0x0061A78F+2800735]
+	GetHandleVerifier [0x0061456C+2775612]
+	GetHandleVerifier [0x004051E0+616112]
+	(No symbol) [0x00315F8C]
+	(No symbol) [0x00312328]
+	(No symbol) [0x0031240B]
+	(No symbol) [0x00304FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-15 22:27:37,490  INFO:Incorrect password
+2023-07-15 22:27:37,497  INFO:Test completed
+2023-07-15 22:27:38,935  INFO:Generating allure report
+2023-07-15 22:46:13,162  INFO:Browser launched
+2023-07-15 22:46:15,887  INFO:Opened the website
+2023-07-15 22:46:17,843  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x007EA813+48355]
+	(No symbol) [0x0077C4B1]
+	(No symbol) [0x00685358]
+	(No symbol) [0x006B09A5]
+	(No symbol) [0x006B0B3B]
+	(No symbol) [0x006DE232]
+	(No symbol) [0x006CA784]
+	(No symbol) [0x006DC922]
+	(No symbol) [0x006CA536]
+	(No symbol) [0x006A82DC]
+	(No symbol) [0x006A93DD]
+	GetHandleVerifier [0x00A4AABD+2539405]
+	GetHandleVerifier [0x00A8A78F+2800735]
+	GetHandleVerifier [0x00A8456C+2775612]
+	GetHandleVerifier [0x008751E0+616112]
+	(No symbol) [0x00785F8C]
+	(No symbol) [0x00782328]
+	(No symbol) [0x0078240B]
+	(No symbol) [0x00774FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-15 22:46:17,857  INFO:Incorrect password
+2023-07-15 22:46:17,982  INFO:Test completed
+2023-07-15 22:46:19,484  INFO:Generating allure report
+2023-07-15 22:47:39,721  INFO:Browser launched
+2023-07-15 22:47:42,229  INFO:Opened the website
+2023-07-15 22:47:44,265  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x007EA813+48355]
+	(No symbol) [0x0077C4B1]
+	(No symbol) [0x00685358]
+	(No symbol) [0x006B09A5]
+	(No symbol) [0x006B0B3B]
+	(No symbol) [0x006DE232]
+	(No symbol) [0x006CA784]
+	(No symbol) [0x006DC922]
+	(No symbol) [0x006CA536]
+	(No symbol) [0x006A82DC]
+	(No symbol) [0x006A93DD]
+	GetHandleVerifier [0x00A4AABD+2539405]
+	GetHandleVerifier [0x00A8A78F+2800735]
+	GetHandleVerifier [0x00A8456C+2775612]
+	GetHandleVerifier [0x008751E0+616112]
+	(No symbol) [0x00785F8C]
+	(No symbol) [0x00782328]
+	(No symbol) [0x0078240B]
+	(No symbol) [0x00774FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-15 22:47:44,276  INFO:Incorrect password
+2023-07-15 22:47:44,383  INFO:Test completed
+2023-07-15 22:47:45,849  INFO:Generating allure report
+2023-07-15 22:51:04,521  INFO:Browser launched
+2023-07-15 22:51:06,800  INFO:Opened the website
+2023-07-15 22:51:08,555  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x007EA813+48355]
+	(No symbol) [0x0077C4B1]
+	(No symbol) [0x00685358]
+	(No symbol) [0x006B09A5]
+	(No symbol) [0x006B0B3B]
+	(No symbol) [0x006DE232]
+	(No symbol) [0x006CA784]
+	(No symbol) [0x006DC922]
+	(No symbol) [0x006CA536]
+	(No symbol) [0x006A82DC]
+	(No symbol) [0x006A93DD]
+	GetHandleVerifier [0x00A4AABD+2539405]
+	GetHandleVerifier [0x00A8A78F+2800735]
+	GetHandleVerifier [0x00A8456C+2775612]
+	GetHandleVerifier [0x008751E0+616112]
+	(No symbol) [0x00785F8C]
+	(No symbol) [0x00782328]
+	(No symbol) [0x0078240B]
+	(No symbol) [0x00774FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-15 22:51:08,573  INFO:Incorrect password
+2023-07-15 22:51:08,681  INFO:Test completed
+2023-07-15 22:51:10,186  INFO:Generating allure report
+2023-07-16 12:00:41,931  INFO:Browser launched
+2023-07-16 12:00:44,380  INFO:Opened the website
+2023-07-16 12:00:47,961  INFO:Entered number
+2023-07-16 12:00:48,012  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00C6A813+48355]
+	(No symbol) [0x00BFC4B1]
+	(No symbol) [0x00B05358]
+	(No symbol) [0x00B309A5]
+	(No symbol) [0x00B30B3B]
+	(No symbol) [0x00B5E232]
+	(No symbol) [0x00B4A784]
+	(No symbol) [0x00B5C922]
+	(No symbol) [0x00B4A536]
+	(No symbol) [0x00B282DC]
+	(No symbol) [0x00B293DD]
+	GetHandleVerifier [0x00ECAABD+2539405]
+	GetHandleVerifier [0x00F0A78F+2800735]
+	GetHandleVerifier [0x00F0456C+2775612]
+	GetHandleVerifier [0x00CF51E0+616112]
+	(No symbol) [0x00C05F8C]
+	(No symbol) [0x00C02328]
+	(No symbol) [0x00C0240B]
+	(No symbol) [0x00BF4FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-16 12:00:48,026  INFO:Incorrect password
+2023-07-16 12:00:49,629  INFO:Browser launched
+2023-07-16 12:00:51,931  INFO:Opened the website
+2023-07-16 12:00:54,203  INFO:Entered number
+2023-07-16 12:00:54,299  INFO:Incorrect mobile nume/e-mail ID
+2023-07-16 12:00:54,300  ERROR:Login failed occurred in builtins
+2023-07-16 12:00:54,313  INFO:Incorrect password
+2023-07-16 12:00:54,320  INFO:Test completed
+2023-07-16 12:00:56,256  INFO:Generating allure report
+2023-07-16 12:01:51,367  INFO:Browser launched
+2023-07-16 12:01:54,382  INFO:Opened the website
+2023-07-16 12:01:56,550  INFO:Entered number
+2023-07-16 12:01:56,620  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00C6A813+48355]
+	(No symbol) [0x00BFC4B1]
+	(No symbol) [0x00B05358]
+	(No symbol) [0x00B309A5]
+	(No symbol) [0x00B30B3B]
+	(No symbol) [0x00B5E232]
+	(No symbol) [0x00B4A784]
+	(No symbol) [0x00B5C922]
+	(No symbol) [0x00B4A536]
+	(No symbol) [0x00B282DC]
+	(No symbol) [0x00B293DD]
+	GetHandleVerifier [0x00ECAABD+2539405]
+	GetHandleVerifier [0x00F0A78F+2800735]
+	GetHandleVerifier [0x00F0456C+2775612]
+	GetHandleVerifier [0x00CF51E0+616112]
+	(No symbol) [0x00C05F8C]
+	(No symbol) [0x00C02328]
+	(No symbol) [0x00C0240B]
+	(No symbol) [0x00BF4FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-16 12:01:56,631  INFO:Incorrect password
+2023-07-16 12:01:58,539  INFO:Browser launched
+2023-07-16 12:02:01,422  INFO:Opened the website
+2023-07-16 12:02:03,858  INFO:Entered number
+2023-07-16 12:02:03,936  INFO:Incorrect mobile nume/e-mail ID
+2023-07-16 12:02:03,937  ERROR:Login failed occurred in builtins
+2023-07-16 12:02:03,948  INFO:Incorrect password
+2023-07-16 12:02:03,953  INFO:Test completed
+2023-07-16 12:02:05,757  INFO:Generating allure report
+2023-07-16 12:41:14,209  INFO:Browser launched
+2023-07-16 12:41:16,479  INFO:Opened the website
+2023-07-16 12:41:18,470  INFO:Entered number
+2023-07-16 12:41:18,535  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00C6A813+48355]
+	(No symbol) [0x00BFC4B1]
+	(No symbol) [0x00B05358]
+	(No symbol) [0x00B309A5]
+	(No symbol) [0x00B30B3B]
+	(No symbol) [0x00B5E232]
+	(No symbol) [0x00B4A784]
+	(No symbol) [0x00B5C922]
+	(No symbol) [0x00B4A536]
+	(No symbol) [0x00B282DC]
+	(No symbol) [0x00B293DD]
+	GetHandleVerifier [0x00ECAABD+2539405]
+	GetHandleVerifier [0x00F0A78F+2800735]
+	GetHandleVerifier [0x00F0456C+2775612]
+	GetHandleVerifier [0x00CF51E0+616112]
+	(No symbol) [0x00C05F8C]
+	(No symbol) [0x00C02328]
+	(No symbol) [0x00C0240B]
+	(No symbol) [0x00BF4FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-16 12:41:20,125  INFO:Browser launched
+2023-07-16 12:41:22,329  INFO:Opened the website
+2023-07-16 12:41:25,621  INFO:Entered number
+2023-07-16 12:41:26,108  INFO:Incorrect mobile number/e-mail ID
+2023-07-16 12:41:26,109  ERROR:Login failed occurred in builtins
+2023-07-16 12:44:19,561  INFO:Browser launched
+2023-07-16 12:44:21,821  INFO:Opened the website
+2023-07-16 12:44:23,472  INFO:Entered number
+2023-07-16 12:44:23,531  INFO:Incorrect mobile number/e-mail ID
+2023-07-16 12:44:23,543  ERROR:Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="ap_password"]"}
+  (Session info: chrome=114.0.5735.199); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00C6A813+48355]
+	(No symbol) [0x00BFC4B1]
+	(No symbol) [0x00B05358]
+	(No symbol) [0x00B309A5]
+	(No symbol) [0x00B30B3B]
+	(No symbol) [0x00B5E232]
+	(No symbol) [0x00B4A784]
+	(No symbol) [0x00B5C922]
+	(No symbol) [0x00B4A536]
+	(No symbol) [0x00B282DC]
+	(No symbol) [0x00B293DD]
+	GetHandleVerifier [0x00ECAABD+2539405]
+	GetHandleVerifier [0x00F0A78F+2800735]
+	GetHandleVerifier [0x00F0456C+2775612]
+	GetHandleVerifier [0x00CF51E0+616112]
+	(No symbol) [0x00C05F8C]
+	(No symbol) [0x00C02328]
+	(No symbol) [0x00C0240B]
+	(No symbol) [0x00BF4FF7]
+	BaseThreadInitThunk [0x750A00C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F37B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F37AEE+238]
+ occurred in builtins
+2023-07-16 12:44:25,188  INFO:Browser launched
+2023-07-16 12:44:27,236  INFO:Opened the website
+2023-07-16 12:44:29,029  INFO:Entered number
+2023-07-16 12:44:29,135  ERROR:Login failed occurred in builtins
