@@ -1,7 +1,16 @@
+import os
+import allure
+from allure_commons.types import AttachmentType
 from behave import *
+from exceptiongroup import catch
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
+import time
+from telnetlib import EC
+from selenium.common import TimeoutException
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException, NoSuchAttributeException
 
 @given('I launch Chrome browser')
 def step_impl(context):
@@ -31,15 +40,54 @@ def step_impl(context, user, pwd):
     signin.click()
     signin_input = context.driver.find_element(By.ID, "ap_email")
     signin_input.send_keys(user)
-    context.driver.find_element(By.ID, "continue").click()
-    pwd_input = context.driver.find_element(By.ID, "ap_password")
-    pwd_input.send_keys(pwd)
-    context.driver.find_element(By.ID, "signInSubmit").click()
+    try:
+        context.driver.find_element(By.ID, "continue").click()
+        pwd_input = context.driver.find_element(By.ID, "ap_password")
+        pwd_input.send_keys(pwd)
+        context.driver.find_element(By.ID, "signInSubmit").click()
+        try:
+
+            error_message = context.driver.find_element(By.CLASS_NAME, "a-alert-heading").text
+            if error_message == "There was a problem":
+                screenshot_name2 = "Incorrect_password.png"
+                screenshot_path2 = os.path.join(os.getcwd(), screenshot_name2)
+                context.driver.save_screenshot(screenshot_path2)
+                print(f"Screenshot saved: {screenshot_path2}")
+                allure.attach(context.driver.get_screenshot_as_png(), name="IncorrectPasswordSS", attachment_type=AttachmentType.PNG)
+                context.driver.close()
+            elif error_message == "Important Message!":
+                time.sleep(20)
+                allure.attach(context.driver.get_screenshot_as_png(), name="IncorrectPasswordSS",
+                              attachment_type=AttachmentType.PNG)
+                context.driver.close()
+        except:
+            pass
+    except NoSuchElementException as e:
+        screenshot_name3 = "incorrect_phoneno.png"
+        screenshot_path3 = os.path.join(os.getcwd(), screenshot_name3)
+        context.driver.save_screenshot(screenshot_path3)
+        print(f"Screenshot saved: {screenshot_path3}")
+        allure.attach(context.driver.get_screenshot_as_png(), name="incorrect_phonenoSS", attachment_type=AttachmentType.PNG)
+        context.driver.close()
+
 
 @when('I should login successfully with "{username}"')
 def step_impl(context, username):
-    name = context.driver.find_element(By.ID, "nav-link-accountList-nav-line-1").text
-    assert name == "Hello, {0}".format(username)
+    try:
+        name1 = context.driver.find_element(By.ID, "nav-link-accountList-nav-line-1").text
+        assert name1 == "Hello, {0}".format(username)
+
+    except AssertionError:
+        # Test case failed, capture screenshot to allure report
+        screenshot_name1 = "assertion_error.png"
+        screenshot_path1 = os.path.join(os.getcwd(), screenshot_name1)
+        context.driver.save_screenshot(screenshot_path1)
+        print(f"Screenshot saved: {screenshot_path1}")
+        allure.attach(context.driver.get_screenshot_as_png(), name="AssertionErrorSS",
+                      attachment_type=AttachmentType.PNG)
+        raise AssertionError("Login unsuccessful")
+
+
     
 
 
