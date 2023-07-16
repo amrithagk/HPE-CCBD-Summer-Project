@@ -10,7 +10,7 @@ Feature: Login to Amazon e commerce and product purchase
     And I log in with valid phone number or email "<mobileno>" and password "<password>"
     And I should login successfully with "<username>"
   
-    And search for the "SONY 55inch TV"
+    And search for the "<product>"
     And click on search button
 
     Then find the third product
@@ -24,7 +24,9 @@ Feature: Login to Amazon e commerce and product purchase
     And the user should be able to view the reviews
 
     Examples:
-        | mobileno | password |username|
-        ||||
+        | mobileno | password |username|product|
+        |7019522431|Nisarga@123|nisarga|Sony 55 inch tv|
+        |7019522431|Nisarga@123|nisarga|rfghbghkjrf|
+        |9387823787|xyz|
   
 
