@@ -6,6 +6,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
+import allure
+from allure_commons.types import AttachmentType
+
+logging.basicConfig(filename="amazonlog.log", format="%(asctime)s  %(levelname)s:%(message)s", level=logging.INFO)
 
 @then('the user navigates to the reviews section')
 def navigates_to_reviews(context):
@@ -19,6 +23,7 @@ def navigates_to_reviews(context):
         time.sleep(10)
     except:
         logging.info("Couldn't locate reviews")
+        allure.attach("Couldn't locate reviews", attachment_type=AttachmentType.TEXT)
         context.driver.quit()
 
 @then('the user should be able to view the reviews')
@@ -34,5 +39,6 @@ def views_reviews(context):
             print(review.text)
     except:
         logging.info("Couldn't open reviews page")
+        allure.attach("Couldn't open reviews page", attachment_type=AttachmentType.TEXT)
     finally:
         context.driver.quit()
