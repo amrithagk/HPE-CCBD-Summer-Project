@@ -9,3 +9,4 @@ Feature: Search for a product on amazon
     And fetch the description of product
     And click add to cart button
     And close browser
+    And send email notification
