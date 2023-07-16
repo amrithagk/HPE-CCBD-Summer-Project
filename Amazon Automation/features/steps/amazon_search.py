@@ -84,7 +84,7 @@ def step_impl(context):
         receiver="hellojaned123@gmail.com"
         smtp.login(sender,sender_password)
         subject="The program was executed successfully"
-        body="Congratulations!Your program was successful"
+        body="Task successful"
         message=f'Subject: {subject}\n\n{body}'
         smtp.sendmail(sender,receiver,message)
         print("Email sent!")
