@@ -23,6 +23,8 @@ Feature: Login to Amazon e commerce and product purchase
     And the user navigates to the reviews section
     And the user should be able to view the reviews
 
+    And send email notification
+
     Examples:
         | mobileno | password |username|product|
         |7019522431|Nisarga@123|nisarga|Sony 55 inch tv|
