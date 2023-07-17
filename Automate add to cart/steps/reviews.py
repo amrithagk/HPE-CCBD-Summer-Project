@@ -20,7 +20,7 @@ def navigates_to_reviews(context):
             EC.element_to_be_clickable((By.XPATH, '//a[@data-hook="see-all-reviews-link-foot"]'))
         )
         read_all_reviews_link.click()
-        time.sleep(10)
+        time.sleep(5)
     except:
         logging.info("Couldn't locate reviews")
         allure.attach("Couldn't locate reviews", attachment_type=AttachmentType.TEXT)
@@ -34,7 +34,7 @@ def views_reviews(context):
         )
         reviews = context.driver.find_elements(By.CSS_SELECTOR, '.a-section.review.aok-relative')
         logging.info("Opened reviews page")
-        time.sleep(10)
+        time.sleep(5)
         for review in reviews:
             print(review.text)
     except:
