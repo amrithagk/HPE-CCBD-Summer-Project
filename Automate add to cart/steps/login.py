@@ -41,11 +41,6 @@ def step_impl(context):
         allure.attach("Homepage unavailable", attachment_type=AttachmentType.TEXT) 
 
 
-@when('I am on the Amazon e-commerce site')
-def step_impl(context):
-    pass
-
-
 @when('I log in with valid phone number or email "{user}" and password "{pwd}"')
 def step_impl(context, user, pwd):
     signin = context.driver.find_element(By.ID, "nav-link-accountList")
@@ -57,6 +52,7 @@ def step_impl(context, user, pwd):
         pwd_input = context.driver.find_element(By.ID, "ap_password")
         pwd_input.send_keys(pwd)
         context.driver.find_element(By.ID, "signInSubmit").click()
+        time.sleep(15)
         try:
 
             error_message = context.driver.find_element(By.CLASS_NAME, "a-alert-heading").text
@@ -96,17 +92,12 @@ def step_impl(context, username):
         
     except AssertionError:
 
-        logging.error("Login failed")
+        logging.error("Username validation failed.")
         screenshot_name1 = "assertion_error.png"
         screenshot_path1 = os.path.join(os.getcwd(), screenshot_name1)
         context.driver.save_screenshot(screenshot_path1)
         print(f"Screenshot saved: {screenshot_path1}")
         allure.attach(context.driver.get_screenshot_as_png(), name="AssertionErrorSS",
                       attachment_type=AttachmentType.PNG)
-        allure.attach("Login failed.", attachment_type=AttachmentType.TEXT)
+        allure.attach("Username validation failed.", attachment_type=AttachmentType.TEXT)
         raise AssertionError("Login unsuccessful")
-
-
-    
-
-
