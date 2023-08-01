@@ -16,7 +16,7 @@ git branch: 'main', credentialsId: 'amazon_automation', url: 'https://github.com
             cd steps
             python3 login.py
             python3 search.py
-            python3 reviews.py
+            python3 reviews.py'''
             }
         }
 
