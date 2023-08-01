@@ -12,7 +12,7 @@ git branch: 'main', credentialsId: 'amazon_automation', url: 'https://github.com
         stage('Build') {
             steps {
                 echo"BUILDING.."
-        sh'''cd Automate_add_to_cart
+        sh'''cd Automate add to cart
             cd steps
             python3 login.py
             python3 search.py
