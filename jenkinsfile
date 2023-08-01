@@ -2,21 +2,24 @@ pipeline {
     agent any
 
     stages {
+        stage('clone') {
+            steps {
+git branch: 'main', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+                
+            }
+        }
+
         stage('Build') {
             steps {
-                echo"building.."
+                echo"BUILDING.."
+        bat script: 'mvn compile'
             }
         }
 
         stage('Test') {
             steps {
                 echo"testing.."
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo"deploying.."
+bat script: 'mvn test -DBrowser=localchrome' 
             }
         }
     }
