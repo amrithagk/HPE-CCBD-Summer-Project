@@ -12,15 +12,14 @@ git branch: 'main', credentialsId: 'amazon_automation', url: 'https://github.com
         stage('Build') {
             steps {
                 echo"BUILDING.."
-        bat script: 'mvn compile'
+        sh'''cd Automate_add_to_cart
+            cd steps
+            python3 login.py
+            python3 search.py
+            python3 reviews.py
             }
         }
 
-        stage('Test') {
-            steps {
-                echo"testing.."
-bat script: 'mvn test -DBrowser=localchrome' 
-            }
-        }
+       
     }
 }
