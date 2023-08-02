@@ -27,8 +27,8 @@ Feature: Login to Amazon e commerce and product purchase
 
     Examples:
         | mobileno | password |username|product|
-        |7019522431|Nisarga@123|nisarga|Sony 55 inch tv|
+        |9387823787|xyz|name|Sony 55inch TV|
+        |7019522431|Nisarga@123|nisarga|Sony 55inch TV|
         |7019522431|Nisarga@123|nisarga|rfghbghkjrf|
-        |9387823787|xyz|
   
 
