@@ -13,15 +13,15 @@ pipeline {
                 echo "BUILDING.."
                 bat '''cd "Automate add to cart"
                        cd steps
-                       python3 login.py
-                       python3 search.py
-                       python3 reviews.py'''
+                       python login.py
+                       python search.py
+                       python reviews.py'''
             }
         }
 
         stage('Test') {
             environment {
-                PATH = "$PATH:c:/python311/lib/site-packages/behave/executable"
+                PATH = "$PATH:C:/Python311/Scripts"
             }
             steps {
                 bat 'behave "Automate add to cart/amazon_addtocart.feature"'
