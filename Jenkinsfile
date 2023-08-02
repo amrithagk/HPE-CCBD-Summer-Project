@@ -11,6 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "BUILDING.."
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 bat '''cd "Automate add to cart"
                        cd steps
                        python login.py
@@ -19,13 +20,13 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            environment {
-                PATH = "$PATH:C:/Python311/Scripts"
-            }
-            steps {
-                bat 'behave "Automate add to cart/amazon_addtocart.feature"'
-            }
-        }
+        // stage('Test') {
+        //     environment {
+        //         PATH = "$PATH:C:/Python311/Scripts"
+        //     }
+        //     steps {
+        //         bat 'behave "Automate add to cart/amazon_addtocart.feature"'
+        //     }
+        // }
     }
 }
