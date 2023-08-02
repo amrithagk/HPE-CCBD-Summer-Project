@@ -11,7 +11,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo "BUILDING.."
-                    sh' python3 /Users/HP/Desktop/HPE-CCBD-Summer-Project/Automate add to cart/steps/login.py'
+                    sh' python3 /Users/HP/Desktop/HPE-CCBD-Summer-Project/"Automate add to cart/steps/login.py"'
+
                   
 }
 }
