@@ -21,19 +21,6 @@ pipeline {
                 '''
             }
         }
-        // stage('Test') {
-        //     steps {
-        //         echo "RUNNING TESTS.."               
-        //         bat 'behave e2e_tests'
-        //         junit 'reports/**/*.xml'
-        //         allure([
-        //             includeProperties: false,
-        //             jdk: '',
-        //             properties: [],
-        //             reportBuildPolicy: 'ALWAYS',
-        //             results: [[path: 'allure-results']]
-        //         ])
-        //      }
-        //  }
+        
     }
 }
