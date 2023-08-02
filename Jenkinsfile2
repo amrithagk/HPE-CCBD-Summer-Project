@@ -30,7 +30,6 @@ pipeline {
                     // Execute 'behave' command to run the feature file and generate the Allure report
                     bat 'behave -f allure_behave.formatter:AllureFormatter -o reports6'
                 }
-                bat 'mv reports6 "Automate add to cart/"'
                 echo "TEST complete."
                 echo "Opening Allure Report"
                 dir('Automate add to cart') {
