@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('clone') {
+            steps {
+                git branch: 'main', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "BUILDING.."
