@@ -12,11 +12,10 @@ pipeline {
             steps {
                 echo "BUILDING.."
                 dir("Automate add to cart") 
-                  {   sh 'echo $PATH'
-                    sh 'pip install -r "Automate add to cart/steps/requirements.txt"''
-                    sh 'python3 steps/login.py'
-                    sh 'python3 steps/product_search.py'
-                    sh 'python3 steps/reviews.py'
+                  {  
+                    sh 'python steps/login.py'
+                    sh 'python steps/product_search.py'
+                    sh 'python steps/reviews.py'
 }
 }
 }
