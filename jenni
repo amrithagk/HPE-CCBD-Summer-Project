@@ -11,9 +11,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo "BUILDING.."
-   sh '"/full/path/to/Automate add to cart/"pip install -r steps/requirements.txt'
                 dir("Automate add to cart") 
                   {
+                    sh 'pip install -r steps/requirements.txt'
                     sh 'python3 steps/login.py'
                     sh 'python3 steps/product_search.py'
                     sh 'python3 steps/reviews.py'
