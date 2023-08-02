@@ -49,5 +49,15 @@ pipeline {
             }
         }
     }
+
+    post {
+        success {
+            echo "Tests passed! Deployment successful!"
+        }
+        failure {
+            echo "Tests failed! Deployment failed!"
+        }
+    }
+}
     
 }
