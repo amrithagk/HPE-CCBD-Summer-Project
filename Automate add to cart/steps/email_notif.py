@@ -26,9 +26,7 @@ Link for the allure report: <a href="https://allure-reports-summerproject.netlif
 
     
     with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-        smtp.ehlo()
         smtp.starttls()
-        smtp.ehlo()
         sender = "hellojaned123@gmail.com"
         sender_password = "dariqfjgajewxtev"
         receiver = "hellojaned123@gmail.com"
