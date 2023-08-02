@@ -12,9 +12,9 @@ pipeline {
             steps {
                 echo "BUILDING.."
                dir('Automate to cart')
-                   {   sh''' python3 login.py&&
-                      python product_search.py&&
-                       python reviews.py'''
+                   {   sh''' python3 steps/login.py&&
+                      python3  steps/product_search.py&&
+                       python3 steps/reviews.py'''
 }
 }
 }
