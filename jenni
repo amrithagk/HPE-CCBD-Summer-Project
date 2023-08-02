@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+ agent {
+        label 'windows'
+    }
 
     stages {
         stage('clone') {
@@ -13,7 +15,14 @@ pipeline {
                 echo "BUILDING.."
  dir('Automate add to cart/steps') {
                     
-                        bat 'python3 login.py'
+                       bat 'python -m venv venv'
+                        bat '.\\venv\\Scripts\\activate.bat'
+
+                        // Install dependencies using pip in the virtual environment
+                        bat '.\\venv\\Scripts\\pip install -r requirements.txt'
+
+                        // Run your scripts within the virtual environment
+                        bat '.\\venv\\Scripts\\python login.py'
                     
 }
                 
