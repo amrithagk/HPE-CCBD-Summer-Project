@@ -11,6 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "BUILDING.."
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 bat '''
                     cd "Automate add to cart"
                     cd steps
