@@ -15,9 +15,7 @@ from allure_commons.types import AttachmentType
 
 logging.basicConfig(filename="amazonlog.log", format="%(asctime)s  %(levelname)s:%(message)s", level=logging.INFO)
 
-current_dir = os.path.dirname(os.path.realpath(__file__))
-screenshot_dir = os.path.join(current_dir, "screenshots")
-
+screenshot_dir = os.path.join(os.path.pardir, "screenshots")
 
 @when('search for the "{product}"')
 def step_impl(context,product):

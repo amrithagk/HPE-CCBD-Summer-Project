@@ -7,7 +7,6 @@ pipeline {
         stage("CLONE") {
             steps {
                 git branch: 'main',  credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
-
             }
         }
 
