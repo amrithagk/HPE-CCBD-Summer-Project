@@ -2,9 +2,9 @@ pipeline {
 
     agent any 
 
-    environment {
-        ALLURE_SERVER_PID = ''
-    }
+    // environment {
+    //     ALLURE_SERVER_PID = ''
+    // }
         
     stages {
 
@@ -29,20 +29,16 @@ pipeline {
                 echo "Starting TEST stage"
 
                 dir('Automate add to cart') {
-                    bat 'behave -f allure_behave.formatter:AllureFormatter -o reports6'
+                    bat 'behave -f allure_behave.formatter:AllureFormatter -o reports7'
                 }
 
                 echo "TEST complete."
                 echo "Opening Allure Report"
 
                 dir('Automate add to cart') {
-                    script {
-                        ALLURE_SERVER_PID = bat(returnStdout: true, script: 'start /B cmd /c "allure serve reports6 & echo %ERRORLEVEL%"').trim()
-                    }
+                    bat 'start /B cmd /c "allure serve reports7"'
                 }
-                echo "Process ID of allure server: ${ALLURE_SERVER_ID}"
-                sleep time: 120, unit: 'SECONDS'
-                bat "taskkill /PID ${ALLURE_SERVER_PID}"
+
             }
         }
 
