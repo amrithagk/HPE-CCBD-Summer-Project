@@ -20,13 +20,14 @@ pipeline {
             }
         }
 
-        // stage('Test') {
-        //     environment {
-        //         PATH = "$PATH:C:/Python311/Scripts"
-        //     }
-        //     steps {
-        //         bat 'behave "Automate add to cart/amazon_addtocart.feature"'
-        //     }
-        // }
+        stage('Test') {
+            steps {
+                script {
+                    def allureCommand = "allure"
+                    def reportPath = "Automate add to cart/allure-report"
+                    bat "${allureCommand} serve ${reportPath}"
+                }
+            }
+        }
     }
 }
