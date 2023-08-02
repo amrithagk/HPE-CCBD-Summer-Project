@@ -1,5 +1,5 @@
 pipeline {
-    
+
     agent any 
         
     stages {
@@ -7,13 +7,14 @@ pipeline {
         stage("CLONE") {
             steps {
                 git branch: 'main',  credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+
             }
         }
 
         stage("BUILD") {
             steps {
                 echo "Executing BUILD stage"
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}..."
+                echo "Running Build ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 echo "BUILD complete."
             }
         }
@@ -21,18 +22,26 @@ pipeline {
         stage("TEST") {
             steps {
                 echo "Starting TEST stage"
-                bat '''pip install -r requirements.txt
-                behave -f allure_behave.formatter:AllureFormatter -o /reports6 amazon_addtocart.feature
-                allure serve /reports6
-                '''
+                // bat '''pip install -r requirements.txt
+                // behave -f allure_behave.formatter:AllureFormatter -o /reports6 amazon_addtocart.feature
+                // '''
+                // bat 'allure serve /reports6'
+                dir('Automate') {
+                    // Execute 'behave' command to run the feature file and generate the Allure report
+                    bat 'behave --format allure_behave.formatter:AllureFormatter -o ./reports6'
+                }
+                bat 'mv reports6 Automate/'
                 echo "TEST complete."
+                echo "Opening Allure Report"
+                dir('Automate') {
+                    bat 'allure serve reports6'
+                }
             }
         }
 
         stage("DEPLOY") {
             steps {
-                echo "Initiating Deployment"
-                // what goes here?
+                echo "Initiating Deployment..."
                 echo "Deployment complete."
             }
         }
