@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "BUILDING.."
                 dir("Automate add to cart") 
-                  { sh 'export PATH=$PATH:C:\Users\HP\Desktop\HPE-CCBD-Summer-Project\Automate add to cart\pip install -r "steps/requirements.txt"'
+                  { sh 'C:\Users\HP\Desktop\HPE-CCBD-Summer-Project\Automate add to cart\pip install -r "steps/requirements.txt"'
                     sh 'python3 steps/login.py'
                     sh 'python3 steps/product_search.py'
                     sh 'python3 steps/reviews.py'
