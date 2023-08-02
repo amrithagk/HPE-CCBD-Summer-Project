@@ -20,12 +20,13 @@ pipeline {
             }
         }
 
-        stage('Test') {
+       stage('Test') {
             steps {
+                echo "Running allure report in the background"
                 script {
                     def allureCommand = "allure"
-                    def reportPath = "Automate add to cart/reports5"
-                    bat "${allureCommand} serve ${reportPath}"
+                    def reportPath = "Automate add to cart/reports5/"
+                    bat "start /B ${allureCommand} serve ${reportPath}"
                 }
             }
         }
