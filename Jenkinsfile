@@ -20,28 +20,32 @@ pipeline {
             }
         }
 
-       // stage('Test') {
-       //      steps {
-       //          echo "Running allure report in the background"
-       //          script {
-       //              def allureCommand = "allure"
-       //              def reportPath = "Automate add to cart/reports5/"
-       //              bat "start /B ${allureCommand} serve ${reportPath}"
-       //          }
-       //      }
-       //  }
+        // stage('Test') {
+        //     steps {
+        //         echo "Running allure report in the background"
+        //         script {
+        //             def allureCommand = "allure"
+        //             def reportPath = "Automate add to cart/reports5/"
+
+        //             // Change the working directory to the correct path
+        //             def workingDirectory = "Automate add to cart"
+                    
+        //             // Run Allure serve in the background
+        //             bat "start /B cmd /c \"cd ${workingDirectory} && ${allureCommand} serve ${reportPath}\""
+        //         }
+        //     }
+        // }
+
         stage('Test') {
             steps {
                 echo "Running allure report in the background"
                 script {
                     def allureCommand = "allure"
-                    def reportPath = "Automate add to cart/reports5/"
-
-                    // Change the working directory to the correct path
-                    def workingDirectory = "Automate add to cart"
+                    def reportPath = "reports/" 
+                    git branch: 'sinchana', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
                     
                     // Run Allure serve in the background
-                    bat "start /B cmd /c \"cd ${workingDirectory} && ${allureCommand} serve ${reportPath}\""
+                    bat "start /B cmd /c \"${allureCommand} serve ${reportPath}\""
                 }
             }
         }
