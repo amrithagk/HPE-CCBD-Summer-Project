@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('clone') {
+        stage('Clone') {
             steps {
                 git branch: 'main', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
             }
@@ -11,14 +11,20 @@ pipeline {
         stage('Build') {
             steps {
                 echo "BUILDING.."
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                bat '''
-                    cd "Automate add to cart"
-                    cd steps
-                    python login.py
-                    python product_search.py
-                    python reviews.py
-                '''
+                bat '''cd "Automate add to cart"
+                       cd steps
+                       python3 login.py
+                       python3 search.py
+                       python3 reviews.py'''
+            }
+        }
+
+        stage('Test') {
+            environment {
+                PATH = "$PATH:c:/python311/lib/site-packages/behave/executable"
+            }
+            steps {
+                bat 'behave "Automate add to cart/amazon_addtocart.feature"'
             }
         }
     }
