@@ -1,10 +1,6 @@
 pipeline {
 
     agent any 
-
-    // environment {
-    //     ALLURE_SERVER_PID = ''
-    // }
         
     stages {
 
@@ -29,17 +25,7 @@ pipeline {
                 echo "Starting TEST stage"
 
                 dir('Automate add to cart') {
-                    steps {
-                script {
-                    try {
-                        // Run Behave tests
-                        bat 'behave -f allure_behave.formatter:AllureFormatter -o reports7'
-                    } catch (Exception e) {
-                        echo "Tests failed: ${e.message}"
-                    }
-                }
-            }
-                    
+                    bat 'behave -f allure_behave.formatter:AllureFormatter -o reports7'                    
                 }
 
                 echo "TEST complete."
