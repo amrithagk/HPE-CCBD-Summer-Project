@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     def allureCommand = "allure"
-                    def reportPath = "Automate add to cart/allure-report"
+                    def reportPath = "Automate add to cart/reports5"
                     bat "${allureCommand} serve ${reportPath}"
                 }
             }
