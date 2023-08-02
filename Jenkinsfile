@@ -32,7 +32,7 @@ pipeline {
        //  }
         stage('Test') {
             steps {
-                echo "Running allure report in the background
+                echo "Running allure report in the background"
                 script {
                     def allureCommand = "allure"
                     def reportPath = "Automate add to cart/reports5"
