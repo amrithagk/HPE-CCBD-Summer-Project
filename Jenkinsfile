@@ -15,7 +15,7 @@ pipeline {
                     cd "Automate add to cart"
                     cd steps
                     python login.py
-                    python search.py
+                    python product_search.py
                     python reviews.py
                 '''
             }
