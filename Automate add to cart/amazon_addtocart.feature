@@ -26,9 +26,8 @@ Feature: Login to Amazon e commerce and product purchase
     And send email notification
 
     Examples:
-        | mobileno | password |username|product|
+        |mobileno|password|username|product|
         |9387823787|xyz|name|Sony 55inch TV|
-        |7019522431|Nisarga@123|nisarga|Sony 55inch TV|
-        |7019522431|Nisarga@123|nisarga|rfghbghkjrf|
+        |7019522431|Nisarga@123|Nisarga|Sony 55inch TV|
+        |7019522431|Nisarga@123|Nisarga|rfghbghkjrf|
   
-
