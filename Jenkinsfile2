@@ -28,7 +28,7 @@ pipeline {
                 // bat 'allure serve /reports6'
                 dir('Automate') {
                     // Execute 'behave' command to run the feature file and generate the Allure report
-                    bat 'behave --format allure_behave.formatter:AllureFormatter -o ./reports6'
+                    bat 'behave -f allure_behave.formatter:AllureFormatter -o ./reports6'
                 }
                 bat 'mv reports6 Automate/'
                 echo "TEST complete."
