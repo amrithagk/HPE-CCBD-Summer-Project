@@ -20,13 +20,28 @@ pipeline {
             }
         }
 
-       stage('Test') {
+       // stage('Test') {
+       //      steps {
+       //          echo "Running allure report in the background"
+       //          script {
+       //              def allureCommand = "allure"
+       //              def reportPath = "Automate add to cart/reports5/"
+       //              bat "start /B ${allureCommand} serve ${reportPath}"
+       //          }
+       //      }
+       //  }
+        stage('Test') {
             steps {
-                echo "Running allure report in the background"
+                echo "Running allure report in the background
                 script {
                     def allureCommand = "allure"
-                    def reportPath = "Automate add to cart/reports5/"
-                    bat "start /B ${allureCommand} serve ${reportPath}"
+                    def reportPath = "Automate add to cart/reports5"
+
+                    // Change the working directory to the correct path
+                    def workingDirectory = "Automate add to cart"
+                    
+                    // Run Allure serve in the background
+                    bat "start /B cmd /c \"cd ${workingDirectory} && ${allureCommand} serve ${reportPath}\""
                 }
             }
         }
