@@ -1,0 +1,41 @@
+pipeline {
+    
+    agent any 
+        
+    stages {
+
+        stage("CLONE") {
+            steps {
+                git branch: 'main',  credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+            }
+        }
+
+        stage("BUILD") {
+            steps {
+                echo "Executing BUILD stage"
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}..."
+                echo "BUILD complete."
+            }
+        }
+
+        stage("TEST") {
+            steps {
+                echo "Starting TEST stage"
+                bat '''pip install -r requirements.txt
+                behave -f allure_behave.formatter:AllureFormatter -o /reports6 amazon_addtocart.feature
+                allure serve /reports6
+                '''
+                echo "TEST complete."
+            }
+        }
+
+        stage("DEPLOY") {
+            steps {
+                echo "Initiating Deployment"
+                // what goes here?
+                echo "Deployment complete."
+            }
+        }
+    }
+    
+}
