@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+                git branch: 'main', credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
             }
         }
 
@@ -28,7 +28,7 @@ pipeline {
                     def reportPath = "reports/"  // Assuming reports folder is directly in the sinchana branch
                     
                     // Checkout the sinchana branch
-                    git branch: 'sinchana', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+                    git branch: 'sinchana', credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
                     
                     // Run Allure serve in the background
                     bat "start /B cmd /c \"${allureCommand} serve ${reportPath}\""
