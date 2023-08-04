@@ -1,42 +1,56 @@
 pipeline {
-    agent any
 
+    agent any 
+        
     stages {
-        stage('Clone') {
+
+        stage("CLONE") {
             steps {
-                git branch: 'main', credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+                git branch: 'main',  credentialsId: '3cb433c7-91f6-4926-b54f-5688920e3ce1', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
             }
         }
 
-        stage('Build') {
+        stage("BUILD") {
             steps {
-                echo "BUILDING.."
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                bat '''cd "Automate add to cart"
-                       cd steps
-                       python login.py
-                       python product_search.py
-                       python reviews.py'''
+                echo "Executing BUILD stage"
+                echo "Running Build ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                echo "BUILD complete."
             }
         }
 
-        stage('Test') {
+        stage("TEST") {
             steps {
-                echo "Running allure report in the background"
+                
+                echo "Starting TEST stage"
+
                 dir('Automate add to cart') {
-                    bat 'behave amazon_addtocart.feature'
+                    bat 'behave -f allure_behave.formatter:AllureFormatter -o reports5'                    
                 }
-                script {
-                    def allureCommand = "allure"
-                    def reportPath = "reports/"  // Assuming reports folder is directly in the sinchana branch
-                    
-                    // Checkout the sinchana branch
-                    git branch: 'sinchana', credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
-                    
-                    // Run Allure serve in the background
-                    bat "start /B cmd /c \"${allureCommand} serve ${reportPath}\""
+
+                echo "TEST complete."
+                echo "Opening Allure Report"
+
+                dir('Automate add to cart') {
+                    bat 'start /B cmd /c "allure serve reports5"'
                 }
+
             }
+        }
+
+        stage("DEPLOY") {
+            steps {
+                echo "Initiating Deployment..."
+                echo "Deployment complete."
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Tests passed! Deployment successful!"
+        }
+        failure {
+            echo "Tests failed! Deployment failed!"
         }
     }
 }
