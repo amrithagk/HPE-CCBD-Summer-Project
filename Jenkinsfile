@@ -93,8 +93,9 @@ pipeline {
             steps {
                 script {
                     def allureCommand = "allure"
-                    def reportPath = "reports/"
-                    bat "${allureCommand} serve ${reportPath}"
+                    def reportPath = "reports/" 
+                    git branch: 'sinchana', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+                    bat "start /B cmd /c \"${allureCommand} serve ${reportPath}\""
                 }
             }
         }
