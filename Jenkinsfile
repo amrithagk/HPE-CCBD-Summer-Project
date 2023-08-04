@@ -25,7 +25,7 @@ pipeline {
                 echo "Running allure report in the background"
                 script {
                     def allureCommand = "allure"
-                    def reportPath = "Automate add to cart/reports5/"
+                    def reportPath = "reports/"
 
                     // Change the working directory to the correct path
                     def workingDirectory = "Automate add to cart"
