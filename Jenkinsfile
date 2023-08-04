@@ -25,16 +25,13 @@ pipeline {
                 echo "Running allure report in the background"
                 script {
                     def allureCommand = "allure"
-                    def reportPath = "reports/"
-
-                    // Change the working directory to the correct path
-                    def workingDirectory = "Automate add to cart"
-
+                    def reportPath = "reports/"  // Assuming reports folder is directly in the sinchana branch
+                    
                     // Checkout the sinchana branch
                     git branch: 'sinchana', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
-
+                    
                     // Run Allure serve in the background
-                    bat "start /B cmd /c \"cd ${workingDirectory} && ${allureCommand} serve ${reportPath}\""
+                    bat "start /B cmd /c \"${allureCommand} serve ${reportPath}\""
                 }
             }
         }
