@@ -23,6 +23,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Running allure report in the background"
+                dir('Automate add to cart') {
+                    bat 'behave amazon_addtocart.feature'
+                }
                 script {
                     def allureCommand = "allure"
                     def reportPath = "reports/"  // Assuming reports folder is directly in the sinchana branch
