@@ -40,7 +40,7 @@ pipeline {
         stage("DEPLOY") {
             steps {
                 echo "Initiating Deployment..."
-                echo "Deployment complete."
+                echo "Deployment completed."
             }
         }
     }
