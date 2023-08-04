@@ -1,63 +1,3 @@
-// pipeline {
-
-//     agent any 
-        
-//     stages {
-
-//         stage("CLONE") {
-//             steps {
-//                 git branch: 'main',  credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
-//             }
-//         }
-
-//         stage("BUILD") {
-//             steps {
-//                 echo "Executing BUILD stage"
-//                 echo "Running Build ${env.BUILD_ID} on ${env.JENKINS_URL}"
-//                 echo "BUILD complete."
-//             }
-//         }
-
-//         stage("TEST") {
-//             steps {
-                
-//                 echo "Starting TEST stage"
-
-//                 dir('Automate add to cart') {
-//                     bat 'behave -f allure_behave.formatter:AllureFormatter -o reports7'                    
-//                 }
-
-//                 echo "TEST complete."
-//                 echo "Opening Allure Report"
-
-//                 dir('Automate add to cart') {
-//                     bat 'start /B cmd /c "allure serve reports7"'
-//                 }
-
-//             }
-//         }
-
-//         stage("DEPLOY") {
-//             steps {
-//                 echo "Initiating Deployment..."
-//                 echo "Deployment complete."
-//             }
-//         }
-//     }
-
-//     post {
-//         success {
-//             echo "Tests passed! Deployment successful!"
-//         }
-//         failure {
-//             echo "Tests failed! Deployment failed!"
-//         }
-//     }
-// }
-
-
-
-
 pipeline {
     agent any
 
@@ -79,23 +19,22 @@ pipeline {
                        python reviews.py'''
             }
         }
-
         stage('Test') {
             steps {
-                echo "Running behave tests"
-                bat '''cd "Automate add to cart"
-                       cd steps
-                       behave'''
-            }
-        }
-        
-        stage('Generate Allure Report') {
-            steps {
+                steps {
+                echo "Running allure report in the background"
                 script {
                     def allureCommand = "allure"
-                    def reportPath = "reports/" 
+                    def reportPath = "Automate add to cart/reports5/"
+        
+                    // Change the working directory to the correct path
+                    def workingDirectory = "Automate add to cart"
+                    
+                    // Checkout the sinchana branch
                     git branch: 'sinchana', credentialsId: 'amazon_automation', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
-                    bat "start /B cmd /c \"${allureCommand} serve ${reportPath}\""
+                    
+                    // Run Allure serve in the background
+                    bat "start /B cmd /c \"cd ${workingDirectory} && ${allureCommand} serve ${reportPath}\""
                 }
             }
         }
