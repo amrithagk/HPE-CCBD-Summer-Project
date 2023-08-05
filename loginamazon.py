@@ -19,9 +19,9 @@ def step_impl(context):
     assert text == "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
 
 
-@given('I am on the Amazon e-commerce site')
-def step_impl(context):
-    pass
+# @given('I am on the Amazon e-commerce site')
+# def step_impl(context):
+#     pass
 
 
 @when('I log in with valid phone number or email "{user}" and password "{pwd}"')
@@ -38,7 +38,8 @@ def step_impl(context, user, pwd):
 @then('I should login successfully')
 def step_impl(context):
     name = context.driver.find_element(By.ID, "nav-link-accountList-nav-line-1").text
-    assert name == "Hello, SUMA"
+    assert name == "Hello, Nisarga"
+    context.driver.close()
     
 
 
