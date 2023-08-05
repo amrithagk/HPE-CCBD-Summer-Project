@@ -20,7 +20,7 @@ def step_impl(context):
 
 
 
-@when('I log in with valid phone number or email "{user}" and password "{pwd}"')
+@when('I log in with valid phone number or email "{mobileno}" and password "{password}"')
 def step_impl(context, user, pwd):
     signin = context.driver.find_element(By.ID, "nav-link-accountList")
     signin.click()
