@@ -1,6 +1,6 @@
 Feature: Login to Amazon e commerce and product purchase
 
-    Scenario: Get price, description, and offers for a specific TV
+    Scenario Outline: Get price, description, and offers for a specific TV
     
       Given I launch Chrome browser
       When I visit amazon website
