@@ -24,7 +24,8 @@ pipeline {
                 echo "Starting TEST stage"
 
                 
-                bat 'behave -f allure_behave.formatter:AllureFormatter -o reports/features'
+                // bat 'behave -f allure_behave.formatter:AllureFormatter -o reports/features'
+                bat 'behave amazon.feature'
 
                 echo "TEST complete."
                 echo "Opening Allure Report"
