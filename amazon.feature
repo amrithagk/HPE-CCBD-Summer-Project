@@ -8,7 +8,7 @@ Scenario: Get price, description, and offers for a specific TV
 
   
   And I log in with valid phone number or email "7019522431" and password "Nisarga@123"
-  Then I should login successfully with "<username>"
+  Then I should login successfully with "Nisarga"
 
 # When I click on the "SONY 55inch TV"
 # Then I should be redirected to the product page
