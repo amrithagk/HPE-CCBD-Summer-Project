@@ -8,10 +8,10 @@ Feature: Login to Amazon e commerce and product purchase
     
       
       And I log in with valid phone number or email "<mobileno>" and password "<password>"
-      Then I should login successfully with "<username>"
+      Then I should login successfully
     
     
     
     Examples:
-        |7019522431|Nisarga@123|Nisarga
+        |7019522431|Nisarga@123
 
