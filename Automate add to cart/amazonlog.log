@@ -532,3 +532,202 @@ Backtrace:
 2023-07-16 12:44:27,236  INFO:Opened the website
 2023-07-16 12:44:29,029  INFO:Entered number
 2023-07-16 12:44:29,135  ERROR:Login failed occurred in builtins
+2023-08-03 15:12:18,823  INFO:Browser launched
+2023-08-03 15:12:22,465  INFO:Opened the website
+2023-08-03 15:12:40,162  INFO:Logged in successfully!
+2023-08-03 15:12:40,348  INFO:Searched for the product
+2023-08-03 15:12:44,103  INFO:Clicked on search button
+2023-08-03 15:12:47,235  ERROR:Error occurred
+2023-08-03 15:12:52,702  INFO:Opened the product on a new tab
+2023-08-03 15:13:08,870  INFO:Located price.
+2023-08-03 15:13:08,917  INFO:Fetched product description
+2023-08-03 15:13:19,117  INFO:Added product to cart
+2023-08-03 15:13:34,607  INFO:Displayed offers
+2023-08-03 15:13:34,615  INFO:Navigated to review section
+2023-08-03 15:13:41,460  INFO:Opened reviews page
+2023-08-03 15:13:59,077  INFO:E-mail sent!
+2023-08-03 16:52:35,547  INFO:Browser launched
+2023-08-03 16:52:51,909  INFO:Opened the website
+2023-08-03 16:53:16,060  INFO:Incorrect password
+2023-08-03 16:53:20,617  INFO:Browser launched
+2023-08-03 16:54:57,001  INFO:Opened the website
+2023-08-03 16:55:21,313  INFO:Incorrect password
+2023-08-03 16:55:24,528  INFO:Browser launched
+2023-08-03 16:57:02,418  INFO:Opened the website
+2023-08-03 16:57:34,457  INFO:Browser launched
+2023-08-03 16:58:48,968  INFO:Opened the website
+2023-08-03 17:00:14,922  INFO:Logged in successfully!
+2023-08-03 17:00:15,194  INFO:Searched for the product
+2023-08-03 17:00:19,992  INFO:Clicked on search button
+2023-08-03 17:00:24,525  INFO:Product not found
+2023-08-03 17:00:25,171  INFO:Couldn't locate the product
+2023-08-03 17:00:30,191  ERROR:Couldn't open new tab
+2023-08-03 17:00:35,508  INFO:Browser launched
+2023-08-03 17:00:49,162  INFO:Opened the website
+2023-08-03 17:01:08,887  INFO:Logged in successfully!
+2023-08-03 17:01:09,077  INFO:Searched for the product
+2023-08-03 17:01:15,469  INFO:Clicked on search button
+2023-08-03 17:01:18,593  ERROR:Error occurred
+2023-08-03 17:01:23,852  INFO:Opened the product on a new tab
+2023-08-03 17:02:58,204  INFO:Located price.
+2023-08-03 17:02:58,257  INFO:Fetched product description
+2023-08-03 17:03:08,618  INFO:Added product to cart
+2023-08-03 17:03:24,254  INFO:Displayed offers
+2023-08-03 17:03:24,263  INFO:Navigated to review section
+2023-08-03 17:03:36,451  INFO:Opened reviews page
+2023-08-03 17:03:52,977  INFO:E-mail sent!
+2023-08-05 10:43:36,505  WARNING:Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 1/5)
+2023-08-05 10:43:39,235  INFO:Browser launched
+2023-08-05 10:44:02,837  INFO:Opened the website
+2023-08-05 10:44:22,385  INFO:Incorrect password
+2023-08-05 10:44:26,280  INFO:Browser launched
+2023-08-05 10:44:32,585  INFO:Opened the website
+2023-08-05 10:44:52,196  INFO:Incorrect password
+2023-08-05 10:44:55,418  INFO:Browser launched
+2023-08-05 10:45:03,050  INFO:Opened the website
+2023-08-05 10:45:23,627  ERROR:Username validation failed.
+2023-08-05 10:45:32,017  INFO:Browser launched
+2023-08-05 10:45:36,218  INFO:Opened the website
+2023-08-05 10:45:54,369  INFO:Logged in successfully!
+2023-08-05 10:45:54,531  INFO:Searched for the product
+2023-08-05 10:45:56,612  INFO:Clicked on search button
+2023-08-05 10:46:04,368  INFO:Product not found
+2023-08-05 10:46:07,061  INFO:Couldn't locate the product
+2023-08-05 10:46:12,131  ERROR:Couldn't open new tab
+2023-08-05 10:46:17,058  INFO:Browser launched
+2023-08-05 10:46:22,099  INFO:Opened the website
+2023-08-05 10:46:40,857  INFO:Logged in successfully!
+2023-08-05 10:46:41,039  INFO:Searched for the product
+2023-08-05 10:46:50,201  INFO:Clicked on search button
+2023-08-05 10:46:53,360  ERROR:Error occurred
+2023-08-05 10:47:01,004  INFO:Opened the product on a new tab
+2023-08-05 10:47:16,119  INFO:Couldn't get availability details
+2023-08-05 10:47:16,255  INFO:Fetched product description
+2023-08-05 10:47:26,571  INFO:Added product to cart
+2023-08-05 10:47:42,215  INFO:Displayed offers
+2023-08-05 10:47:42,225  INFO:Navigated to review section
+2023-08-05 10:47:48,969  INFO:Opened reviews page
+2023-08-05 10:48:00,636  INFO:E-mail sent!
+2023-08-05 22:31:13,773  INFO:Browser launched
+2023-08-05 22:31:20,922  INFO:Opened the website
+2023-08-05 22:31:24,669  INFO:Incorrect mobile number/e-mail ID
+2023-08-05 22:31:27,822  INFO:Browser launched
+2023-08-05 22:31:30,758  INFO:Opened the website
+2023-08-05 22:31:49,504  INFO:Incorrect password
+2023-08-05 22:31:52,095  INFO:Browser launched
+2023-08-05 22:31:56,017  INFO:Opened the website
+2023-08-05 22:32:17,225  ERROR:Username validation failed.
+2023-08-05 22:32:25,335  INFO:Browser launched
+2023-08-05 22:32:28,536  INFO:Opened the website
+2023-08-05 22:32:48,108  INFO:Logged in successfully!
+2023-08-05 22:32:48,709  INFO:Searched for the product
+2023-08-05 22:32:51,139  INFO:Clicked on search button
+2023-08-05 22:32:55,128  INFO:Product not found
+2023-08-05 22:32:55,790  INFO:Couldn't locate the product
+2023-08-05 22:33:00,794  ERROR:Couldn't open new tab
+2023-08-05 22:33:05,499  INFO:Browser launched
+2023-08-05 22:33:09,197  INFO:Opened the website
+2023-08-05 22:33:29,500  INFO:Logged in successfully!
+2023-08-05 22:33:29,697  INFO:Searched for the product
+2023-08-05 22:33:34,900  INFO:Clicked on search button
+2023-08-05 22:33:38,041  ERROR:Error occurred
+2023-08-05 22:33:43,792  INFO:Opened the product on a new tab
+2023-08-05 22:34:06,676  INFO:Located price.
+2023-08-05 22:34:06,753  INFO:Fetched product description
+2023-08-05 22:34:17,037  INFO:Added product to cart
+2023-08-05 22:34:33,004  INFO:Displayed offers
+2023-08-05 22:34:33,035  INFO:Navigated to review section
+2023-08-05 22:34:40,030  INFO:Opened reviews page
+2023-08-05 22:34:55,252  INFO:E-mail sent!
+2023-08-06 13:35:18,013  INFO:Browser launched
+2023-08-06 13:35:20,693  INFO:Opened the website
+2023-08-06 13:35:23,185  INFO:Incorrect mobile number/e-mail ID
+2023-08-06 13:35:25,246  INFO:Browser launched
+2023-08-06 13:35:27,424  INFO:Opened the website
+2023-08-06 13:35:45,625  INFO:Incorrect password
+2023-08-06 13:35:47,627  INFO:Browser launched
+2023-08-06 13:35:50,449  INFO:Opened the website
+2023-08-06 13:39:31,811  INFO:Browser launched
+2023-08-06 13:39:34,580  INFO:Opened the website
+2023-08-06 13:39:59,793  INFO:Browser launched
+2023-08-06 13:40:04,102  INFO:Opened the website
+2023-08-06 13:40:06,676  INFO:Incorrect mobile number/e-mail ID
+2023-08-06 13:40:09,046  INFO:Browser launched
+2023-08-06 13:40:11,584  INFO:Opened the website
+2023-08-06 13:40:30,203  INFO:Incorrect password
+2023-08-06 13:40:32,565  INFO:Browser launched
+2023-08-06 13:40:35,936  INFO:Opened the website
+2023-08-06 13:40:53,537  ERROR:Username validation failed.
+2023-08-06 13:41:05,544  INFO:Browser launched
+2023-08-06 13:41:09,830  INFO:Opened the website
+2023-08-06 13:42:18,251  INFO:Browser launched
+2023-08-06 13:42:22,579  INFO:Opened the website
+2023-08-06 13:42:25,282  INFO:Incorrect mobile number/e-mail ID
+2023-08-06 13:42:27,716  INFO:Browser launched
+2023-08-06 13:42:30,762  INFO:Opened the website
+2023-08-06 13:42:49,825  INFO:Incorrect password
+2023-08-06 13:42:52,384  INFO:Browser launched
+2023-08-06 13:42:56,116  INFO:Opened the website
+2023-08-06 13:43:14,019  ERROR:Username validation failed.
+2023-08-06 13:43:27,497  INFO:Browser launched
+2023-08-06 13:43:31,789  INFO:Opened the website
+2023-08-06 13:43:50,439  INFO:Logged in successfully!
+2023-08-06 13:43:50,602  INFO:Searched for the product
+2023-08-06 13:43:52,081  INFO:Clicked on search button
+2023-08-06 13:43:59,814  INFO:Product not found
+2023-08-06 13:44:04,463  INFO:Couldn't locate the product
+2023-08-06 13:44:09,481  ERROR:Couldn't open new tab
+2023-08-06 13:44:14,171  INFO:Browser launched
+2023-08-06 13:44:17,807  INFO:Opened the website
+2023-08-06 13:44:35,669  INFO:Logged in successfully!
+2023-08-06 13:44:35,859  INFO:Searched for the product
+2023-08-06 13:44:40,186  INFO:Clicked on search button
+2023-08-06 13:44:43,323  ERROR:Error occurred
+2023-08-06 13:44:51,162  INFO:Opened the product on a new tab
+2023-08-06 13:44:59,763  INFO:Couldn't get availability details
+2023-08-06 13:44:59,835  INFO:Fetched product description
+2023-08-06 13:45:10,107  INFO:Added product to cart
+2023-08-06 13:45:25,732  INFO:Displayed offers
+2023-08-06 13:45:25,742  INFO:Navigated to review section
+2023-08-06 13:45:32,180  INFO:Opened reviews page
+2023-08-06 13:45:43,707  INFO:E-mail sent!
+2023-08-06 14:15:54,729  INFO:Browser launched
+2023-08-06 14:15:57,061  INFO:Opened the website
+2023-08-06 14:15:59,482  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
+2023-08-06 14:15:59,651  INFO:Incorrect mobile number/e-mail ID
+2023-08-06 14:16:18,756  INFO:Browser launched
+2023-08-06 14:16:21,905  INFO:Opened the website
+2023-08-06 14:16:23,914  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
+2023-08-06 14:16:24,091  INFO:Incorrect mobile number/e-mail ID
+2023-08-06 14:20:50,097  INFO:Browser launched
+2023-08-06 14:20:52,658  INFO:Opened the website
+2023-08-06 14:20:54,563  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
+2023-08-06 14:20:54,968  INFO:Incorrect mobile number/e-mail ID
+2023-08-06 14:23:59,267  INFO:Browser launched
+2023-08-06 14:24:01,433  INFO:Opened the website
+2023-08-06 14:24:03,928  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
+2023-08-06 14:24:04,100  INFO:Incorrect mobile number/e-mail ID
+2023-08-06 14:24:06,114  INFO:Browser launched
+2023-08-06 14:24:10,427  INFO:Opened the website
+2023-08-06 14:24:28,540  INFO:Incorrect password
+2023-08-06 14:24:30,601  INFO:Browser launched
+2023-08-06 14:24:37,240  INFO:Opened the website
+2023-08-06 14:24:54,433  ERROR:Username validation failed.
+2023-08-06 14:25:07,063  INFO:Browser launched
+2023-08-06 14:25:09,474  INFO:Opened the website
+2023-08-06 14:25:26,957  INFO:Logged in successfully!
+2023-08-06 14:25:27,092  INFO:Searched for the product
+2023-08-06 14:25:28,234  INFO:Clicked on search button
+2023-08-06 14:25:31,666  INFO:Product not found
+2023-08-06 14:25:36,169  INFO:Couldn't locate the product
+2023-08-06 14:25:41,186  ERROR:Couldn't open new tab
+2023-08-06 14:25:45,503  INFO:Browser launched
+2023-08-06 14:25:48,784  INFO:Opened the website
+2023-08-06 14:26:06,395  INFO:Logged in successfully!
+2023-08-06 14:26:06,548  INFO:Searched for the product
+2023-08-06 14:26:08,605  INFO:Clicked on search button
+2023-08-06 14:26:11,733  ERROR:Error occurred
+2023-08-06 14:26:17,468  INFO:Opened the product on a new tab
+2023-08-06 14:26:43,902  INFO:Couldn't get availability details
+2023-08-06 14:26:43,948  INFO:Fetched product description
+2023-08-06 14:26:54,278  INFO:Added product to cart

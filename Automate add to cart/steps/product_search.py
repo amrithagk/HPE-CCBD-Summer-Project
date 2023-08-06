@@ -14,8 +14,13 @@ import allure
 from allure_commons.types import AttachmentType
 
 logging.basicConfig(filename="amazonlog.log", format="%(asctime)s  %(levelname)s:%(message)s", level=logging.INFO)
+screenshot_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Screenshots")
 
-screenshot_dir = os.path.join(os.path.pardir, "screenshots")
+def screenshot(driver, filepath):
+    if not os.path.exists(screenshot_dir):
+        os.mkdir(screenshot_dir)
+    driver.save_screenshot(filepath)
+
 
 @when('search for the "{product}"')
 def step_impl(context,product):
@@ -34,14 +39,12 @@ def step_impl(context):
         time.sleep(3)
         assert "No results for" in context.driver.page_source
         screenshot_path3 = os.path.join(screenshot_dir, "unsuccessful_search.png")
-        context.driver.save_screenshot(screenshot_path3)
+        screenshot(context.driver,screenshot_path3)
         logging.info("Product not found")
         allure.attach("Product not found", attachment_type=AttachmentType.TEXT)
         allure.attach(context.driver.get_screenshot_as_png(), name="Unsuccessful search", attachment_type=AttachmentType.PNG)
     except AssertionError:
         logging.error("Error occurred")
-    if not os.path.exists(screenshot_dir):
-        os.makedirs(screenshot_dir)
 
 
 @then('find the third product')
