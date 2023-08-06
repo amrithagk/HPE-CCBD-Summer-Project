@@ -41,16 +41,15 @@ pipeline {
 
     post {
         always {
-            dir ("Automate add to cart")
-            {
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'allure_report']]
-                ])
-            }
+
+            allure([
+                includeProperties: false,
+                jdk: '',
+                properties: [],
+                reportBuildPolicy: 'ALWAYS',
+                results: [[path: 'allure_report']]
+            ])
+
         }
         success {
             echo "Tests passed! Deployment successful!"
