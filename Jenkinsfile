@@ -24,16 +24,10 @@ pipeline {
                 echo "Starting TEST stage"
 
                 dir('Automate add to cart') {
-                    bat 'behave -f allure_behave.formatter:AllureFormatter -o reports7'                    
+                    bat 'behave -f allure_behave.formatter:AllureFormatter -o allure_report'                    
                 }
 
                 echo "TEST complete."
-                echo "Opening Allure Report"
-
-                dir('Automate add to cart') {
-                    bat 'start /B cmd /c "allure serve reports7"'
-                }
-
             }
         }
 
@@ -46,6 +40,19 @@ pipeline {
     }
 
     post {
+        always 
+        {    
+            dir ("Automate add to cart")
+            {
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'allure_report']]
+                ])
+            }
+        }
         success {
             echo "Tests passed! Deployment successful!"
         }
