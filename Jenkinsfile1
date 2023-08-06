@@ -41,7 +41,16 @@ pipeline {
 
     post {
         always {
-            bat 'start /B cmd /c "allure serve reports"'
+            dir ("Automate add to cart")
+            {
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'allure_report']]
+                ])
+            }
         }
         success {
             echo "Tests passed! Deployment successful!"
