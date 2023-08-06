@@ -24,7 +24,7 @@ pipeline {
                     bat 'python login.py'
                 }
                 
-                bat 'behave -f allure_behave.formatter:AllureFormatter -o reports1'
+                bat 'behave -f allure_behave.formatter:AllureFormatter -o reports'
                 
                 echo "TEST complete."
 
@@ -41,7 +41,7 @@ pipeline {
 
     post {
         always {
-            bat 'start /B cmd /c "allure serve reports1"'
+            bat 'start /B cmd /c "allure serve reports"'
         }
         success {
             echo "Tests passed! Deployment successful!"
