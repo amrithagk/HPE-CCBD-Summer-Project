@@ -24,15 +24,11 @@ pipeline {
                 echo "Starting TEST stage"
 
                 dir('Automate add to cart') {
-                    bat 'behave -f allure_behave.formatter:AllureFormatter -o reports5'                    
+                    bat 'behave -f allure_behave.formatter:AllureFormatter -o reports'                    
                 }
 
                 echo "TEST complete."
-                echo "Opening Allure Report"
-
-                dir('Automate add to cart') {
-                    bat 'start /B cmd /c "allure serve reports5"'
-                }
+                
 
             }
         }
@@ -46,11 +42,16 @@ pipeline {
     }
 
     post {
+        always {
+            dir('Automate add to cart') {
+                    bat 'start /B cmd /c "allure serve reports"'
+                }
+        }
         success {
             echo "Tests passed! Deployment successful!"
         }
         failure {
             echo "Tests failed! Deployment failed!"
         }
-    }
+     }
 }
