@@ -6,7 +6,7 @@ pipeline {
 
         stage("CLONE") {
             steps {
-                git branch: 'main',  credentialsId: 'GHcreds', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+                git branch: 'main',  credentialsId: '3cb433c7-91f6-4926-b54f-5688920e3ce1', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
             }
         }
 
@@ -34,7 +34,7 @@ pipeline {
         stage("DEPLOY") {
             steps {
                 echo "Initiating Deployment..."
-                echo "Deployment complete."
+                echo "Deployment completed."
             }
         }
     }
@@ -59,5 +59,5 @@ pipeline {
         failure {
             echo "Tests failed! Deployment failed!"
         }
-    }
+     }
 }

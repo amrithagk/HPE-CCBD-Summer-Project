@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+        
+    stages {
+        stage("CLONE") {
+            steps {
+                git branch: 'sinchana', credentialsId: 'YOUR_CREDENTIALS_ID', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+            }
+        }
+
+        stage("BUILD") {
+            steps {
+                echo "Executing BUILD stage"
+                echo "Running Build \${env.BUILD_ID} on \${env.JENKINS_URL}"
+                echo "BUILD complete."
+            }
+        }
+
+        stage("TEST") {
+            steps {
+                echo "Starting TEST stage"
+                
+                dir('steps') {
+                    bat 'python login.py'
+                }
+                
+                bat 'behave -f allure_behave.formatter:AllureFormatter -o reports'
+                
+                echo "TEST complete."
+
+            }
+        }
+
+        stage("DEPLOY") {
+            steps {
+                echo "Initiating Deployment..."
+                echo "Deployment completed."
+            }
+        }
+    }
+
+    post {
+        always {
+            bat 'start /B cmd /c "allure serve reports"'
+        }
+        success {
+            echo "Tests passed! Deployment successful!"
+        }
+        failure {
+            echo "Tests failed! Deployment failed!"
+        }
+    }
+}
