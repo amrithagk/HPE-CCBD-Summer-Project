@@ -5,11 +5,7 @@ from behave import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-from telnetlib import EC
-from selenium.common import TimeoutException
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException, NoSuchAttributeException
+from selenium.common.exceptions import NoSuchElementException
 import logging
 
 logging.basicConfig(filename="amazonlog.log", format="%(asctime)s  %(levelname)s:%(message)s", level=logging.INFO)

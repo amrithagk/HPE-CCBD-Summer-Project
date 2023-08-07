@@ -731,3 +731,112 @@ Backtrace:
 2023-08-06 14:26:43,902  INFO:Couldn't get availability details
 2023-08-06 14:26:43,948  INFO:Fetched product description
 2023-08-06 14:26:54,278  INFO:Added product to cart
+2023-08-06 19:56:23,663  INFO:Browser launched
+2023-08-06 19:56:28,942  INFO:Opened the website
+2023-08-06 19:56:31,104  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
+2023-08-06 19:56:31,284  INFO:Incorrect mobile number/e-mail ID
+2023-08-06 19:56:33,414  INFO:Browser launched
+2023-08-06 19:56:38,453  INFO:Opened the website
+2023-08-06 19:56:57,618  INFO:Incorrect password
+2023-08-06 19:56:59,685  INFO:Browser launched
+2023-08-06 19:57:02,766  INFO:Opened the website
+2023-08-06 19:57:19,756  ERROR:Username validation failed.
+2023-08-06 19:57:32,408  INFO:Browser launched
+2023-08-06 19:57:35,075  INFO:Opened the website
+2023-08-06 19:57:51,937  INFO:Logged in successfully!
+2023-08-06 19:57:52,080  INFO:Searched for the product
+2023-08-06 19:57:53,272  INFO:Clicked on search button
+2023-08-06 19:57:56,674  INFO:Product not found
+2023-08-06 19:58:01,198  INFO:Couldn't locate the product
+2023-08-06 19:58:06,216  ERROR:Couldn't open new tab
+2023-08-06 19:58:10,337  INFO:Browser launched
+2023-08-06 19:58:13,868  INFO:Opened the website
+2023-08-06 19:58:31,078  INFO:Logged in successfully!
+2023-08-06 19:58:31,221  INFO:Searched for the product
+2023-08-06 19:58:34,658  INFO:Clicked on search button
+2023-08-06 19:58:37,765  ERROR:Error occurred
+2023-08-06 19:58:44,656  INFO:Opened the product on a new tab
+2023-08-06 19:59:02,808  INFO:Couldn't get availability details
+2023-08-06 19:59:02,840  INFO:Fetched product description
+2023-08-06 19:59:13,051  INFO:Added product to cart
+2023-08-06 19:59:28,522  INFO:Displayed offers
+2023-08-06 19:59:28,530  INFO:Navigated to review section
+2023-08-06 19:59:34,767  INFO:Opened reviews page
+2023-08-06 19:59:46,439  INFO:E-mail sent!
+2023-08-07 15:16:02,808  WARNING:Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 1/5)
+2023-08-07 15:16:04,727  INFO:Browser launched
+2023-08-07 15:16:05,133  ERROR:Unable to open website
+2023-08-07 16:40:18,907  INFO:Browser launched
+2023-08-07 16:40:37,116  INFO:Opened the website
+2023-08-07 16:40:42,339  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
+2023-08-07 16:40:42,511  INFO:Incorrect mobile number/e-mail ID
+2023-08-07 16:40:44,558  INFO:Browser launched
+2023-08-07 16:40:58,634  INFO:Opened the website
+2023-08-07 16:41:19,900  INFO:Incorrect password
+2023-08-07 16:41:21,907  INFO:Browser launched
+2023-08-07 16:41:34,924  INFO:Opened the website
+2023-08-07 16:42:05,643  ERROR:Username validation failed.
+2023-08-07 16:42:11,332  INFO:Browser launched
+2023-08-07 16:42:27,199  INFO:Opened the website
+2023-08-07 16:42:49,143  INFO:Logged in successfully!
+2023-08-07 16:42:49,273  INFO:Searched for the product
+2023-08-07 16:42:54,210  INFO:Clicked on search button
+2023-08-07 16:42:59,632  INFO:Product not found
+2023-08-07 16:43:04,154  INFO:Couldn't locate the product
+2023-08-07 16:43:09,167  ERROR:Couldn't open new tab
+2023-08-07 16:43:14,272  INFO:Browser launched
+2023-08-07 16:43:32,708  INFO:Opened the website
+2023-08-07 16:44:12,629  INFO:Logged in successfully!
+2023-08-07 16:44:12,783  INFO:Searched for the product
+2023-08-07 16:44:26,598  INFO:Clicked on search button
+2023-08-07 16:44:29,733  ERROR:Error occurred
+2023-08-07 16:44:35,009  INFO:Opened the product on a new tab
+2023-08-07 16:45:43,475  INFO:Located price.
+2023-08-07 16:45:43,548  INFO:Fetched product description
+2023-08-07 16:45:53,731  INFO:Added product to cart
+2023-08-07 16:47:27,354  INFO:Browser launched
+2023-08-07 16:47:41,159  INFO:Opened the website
+2023-08-07 16:48:02,005  INFO:Logged in successfully!
+2023-08-07 16:48:02,164  INFO:Searched for the product
+2023-08-07 16:48:08,843  INFO:Clicked on search button
+2023-08-07 16:48:12,004  ERROR:Error occurred
+2023-08-07 16:48:17,270  INFO:Opened the product on a new tab
+2023-08-07 16:49:23,591  INFO:Couldn't get availability details
+2023-08-07 16:49:23,616  INFO:Fetched product description
+2023-08-07 16:49:34,046  INFO:Added product to cart
+2023-08-07 16:49:49,725  INFO:Displayed offers
+2023-08-07 16:49:49,739  INFO:Navigated to review section
+2023-08-07 16:49:57,916  INFO:Opened reviews page
+2023-08-07 16:50:09,459  INFO:E-mail sent!
+2023-08-07 17:38:03,266  INFO:Browser launched
+2023-08-07 17:38:18,088  INFO:Opened the website
+2023-08-07 17:38:21,065  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
+2023-08-07 17:38:21,242  INFO:Incorrect mobile number/e-mail ID
+2023-08-07 17:38:23,375  INFO:Browser launched
+2023-08-07 17:38:27,776  INFO:Opened the website
+2023-08-07 17:38:46,488  INFO:Incorrect password
+2023-08-07 17:38:48,549  INFO:Browser launched
+2023-08-07 17:38:58,633  INFO:Opened the website
+2023-08-07 17:39:16,329  ERROR:Username validation failed.
+2023-08-07 17:39:28,359  INFO:Browser launched
+2023-08-07 17:39:35,848  INFO:Opened the website
+2023-08-07 17:39:54,812  INFO:Logged in successfully!
+2023-08-07 17:39:54,963  INFO:Searched for the product
+2023-08-07 17:39:56,342  INFO:Clicked on search button
+2023-08-07 17:39:59,736  INFO:Product not found
+2023-08-07 17:40:00,082  INFO:Couldn't locate the product
+2023-08-07 17:40:05,097  ERROR:Couldn't open new tab
+2023-08-07 17:40:09,334  INFO:Browser launched
+2023-08-07 17:40:14,351  INFO:Opened the website
+2023-08-07 17:40:32,184  INFO:Logged in successfully!
+2023-08-07 17:40:32,340  INFO:Searched for the product
+2023-08-07 17:40:34,689  INFO:Clicked on search button
+2023-08-07 17:40:37,832  ERROR:Error occurred
+2023-08-07 17:40:43,888  INFO:Opened the product on a new tab
+2023-08-07 17:41:38,326  INFO:Couldn't get availability details
+2023-08-07 17:41:38,362  INFO:Fetched product description
+2023-08-07 17:41:48,681  INFO:Added product to cart
+2023-08-07 17:42:04,283  INFO:Displayed offers
+2023-08-07 17:42:04,295  INFO:Navigated to review section
+2023-08-07 17:42:10,891  INFO:Opened reviews page
+2023-08-07 17:42:22,347  INFO:E-mail sent!
