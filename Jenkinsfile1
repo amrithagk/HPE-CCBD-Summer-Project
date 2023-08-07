@@ -11,7 +11,7 @@ pipeline {
         stage("BUILD") {
             steps {
                 echo "Executing BUILD stage"
-                echo "Running Build \${env.BUILD_ID} on \${env.JENKINS_URL}"
+                echo "Running Build ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 echo "BUILD complete."
             }
         }
@@ -20,11 +20,14 @@ pipeline {
             steps {
                 echo "Starting TEST stage"
                 
+                // Checkout the sinchana branch
+                checkout([$class: 'GitSCM', branches: [[name: 'sinchana']], userRemoteConfigs: [[url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git']]])
+                
                 dir('steps') {
                     bat 'python login.py'
                 }
                 
-                bat 'behave -f allure_behave.formatter:AllureFormatter -o reports'
+                bat 'behave -f allure_behave.formatter:AllureFormatter -o allure_reports'
                 
                 echo "TEST complete."
 
@@ -41,15 +44,13 @@ pipeline {
 
     post {
         always {
-
             allure([
                 includeProperties: false,
                 jdk: '',
                 properties: [],
                 reportBuildPolicy: 'ALWAYS',
-                results: [[path: 'allure_report']]
+                results: [[path: 'allure_reports']]
             ])
-
         }
         success {
             echo "Tests passed! Deployment successful!"
