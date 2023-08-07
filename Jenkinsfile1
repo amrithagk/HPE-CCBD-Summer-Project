@@ -24,7 +24,7 @@ pipeline {
                     bat 'python login.py'
                 }
                 
-                bat 'behave -f allure_behave.formatter:AllureFormatter -o reports'
+                bat 'behave -f allure_behave.formatter:AllureFormatter -o allure_report'
                 
                 echo "TEST complete."
 
@@ -47,7 +47,7 @@ pipeline {
                 jdk: '',
                 properties: [],
                 reportBuildPolicy: 'ALWAYS',
-                results: [[path: 'reports1']]
+                results: [[path: 'allure_reports']]
             ])
 
         }
