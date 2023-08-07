@@ -24,7 +24,7 @@ pipeline {
                     bat 'python login.py'
                 }
                 
-                bat 'behave -f allure_behave.formatter:AllureFormatter -o reports1'
+                bat 'behave -f allure_behave.formatter:AllureFormatter -o reports'
                 
                 echo "TEST complete."
 
@@ -40,14 +40,13 @@ pipeline {
     }
 
     post {
-        always {
-            git branch: 'sinchana' 
+        always { 
             allure([
                 includeProperties: false,
                 jdk: '',
                 properties: [],
                 reportBuildPolicy: 'ALWAYS',
-                results: [[path: 'reports1']]
+                results: [[path: 'reports']]
             ])
 
         }
