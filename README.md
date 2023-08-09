@@ -6,9 +6,12 @@
   `pip install -r requirements.txt`
 
 ### To execute the tests  
+  In the feature file, under the **Examples** block, specify all the desired testcases in the same order as the parameters have been listed in the 
+  **Examples** section  
+  Then run:
   `behave -f allure_behave.formatter:AllureFormatter -o \<path to reports folder\> \<path to feature file\>`
 
 ### To view the allure reports
   `allure serve \<path to  to reports folder\>`
 
-### The JenkinsFile contains the pipeline script.
+### The Jenkinsfile contains the pipeline script.
