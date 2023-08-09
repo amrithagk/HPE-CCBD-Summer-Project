@@ -78,7 +78,6 @@ def step_impl(context, user, pwd):
         screenshot_name3 = "incorrect_phoneno.png"
         screenshot_path3 = os.path.join(screenshot_dir, screenshot_name3)
         screenshot(context.driver, screenshot_path3)
-        logging.info(f"Screenshot saved: {screenshot_path3}")
         allure.attach(context.driver.get_screenshot_as_png(), name="incorrect_phonenoSS", attachment_type=AttachmentType.PNG)
         logging.info("Incorrect mobile number/e-mail ID")
         allure.attach("Login failed. Incorrect mobile number/e-mail ID.", attachment_type=AttachmentType.TEXT)

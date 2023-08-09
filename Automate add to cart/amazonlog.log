@@ -693,19 +693,15 @@ Backtrace:
 2023-08-06 13:45:43,707  INFO:E-mail sent!
 2023-08-06 14:15:54,729  INFO:Browser launched
 2023-08-06 14:15:57,061  INFO:Opened the website
-2023-08-06 14:15:59,482  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
 2023-08-06 14:15:59,651  INFO:Incorrect mobile number/e-mail ID
 2023-08-06 14:16:18,756  INFO:Browser launched
 2023-08-06 14:16:21,905  INFO:Opened the website
-2023-08-06 14:16:23,914  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
 2023-08-06 14:16:24,091  INFO:Incorrect mobile number/e-mail ID
 2023-08-06 14:20:50,097  INFO:Browser launched
 2023-08-06 14:20:52,658  INFO:Opened the website
-2023-08-06 14:20:54,563  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
 2023-08-06 14:20:54,968  INFO:Incorrect mobile number/e-mail ID
 2023-08-06 14:23:59,267  INFO:Browser launched
 2023-08-06 14:24:01,433  INFO:Opened the website
-2023-08-06 14:24:03,928  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
 2023-08-06 14:24:04,100  INFO:Incorrect mobile number/e-mail ID
 2023-08-06 14:24:06,114  INFO:Browser launched
 2023-08-06 14:24:10,427  INFO:Opened the website
@@ -733,7 +729,6 @@ Backtrace:
 2023-08-06 14:26:54,278  INFO:Added product to cart
 2023-08-06 19:56:23,663  INFO:Browser launched
 2023-08-06 19:56:28,942  INFO:Opened the website
-2023-08-06 19:56:31,104  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
 2023-08-06 19:56:31,284  INFO:Incorrect mobile number/e-mail ID
 2023-08-06 19:56:33,414  INFO:Browser launched
 2023-08-06 19:56:38,453  INFO:Opened the website
@@ -768,7 +763,6 @@ Backtrace:
 2023-08-07 15:16:05,133  ERROR:Unable to open website
 2023-08-07 16:40:18,907  INFO:Browser launched
 2023-08-07 16:40:37,116  INFO:Opened the website
-2023-08-07 16:40:42,339  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
 2023-08-07 16:40:42,511  INFO:Incorrect mobile number/e-mail ID
 2023-08-07 16:40:44,558  INFO:Browser launched
 2023-08-07 16:40:58,634  INFO:Opened the website
@@ -810,7 +804,6 @@ Backtrace:
 2023-08-07 16:50:09,459  INFO:E-mail sent!
 2023-08-07 17:38:03,266  INFO:Browser launched
 2023-08-07 17:38:18,088  INFO:Opened the website
-2023-08-07 17:38:21,065  INFO:Screenshot saved: D:\PES University\HPE Summer Project\latest\HPE-CCBD-Summer-Project\Automate add to cart\Screenshots\incorrect_phoneno.png
 2023-08-07 17:38:21,242  INFO:Incorrect mobile number/e-mail ID
 2023-08-07 17:38:23,375  INFO:Browser launched
 2023-08-07 17:38:27,776  INFO:Opened the website
@@ -840,3 +833,66 @@ Backtrace:
 2023-08-07 17:42:04,295  INFO:Navigated to review section
 2023-08-07 17:42:10,891  INFO:Opened reviews page
 2023-08-07 17:42:22,347  INFO:E-mail sent!
+2023-08-09 13:37:40,185  WARNING:Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 1/5)
+2023-08-09 13:37:41,976  INFO:Browser launched
+2023-08-09 13:37:44,716  INFO:Opened the website
+2023-08-09 13:37:47,339  INFO:Incorrect mobile number/e-mail ID
+2023-08-09 13:37:49,252  INFO:Browser launched
+2023-08-09 13:37:52,267  INFO:Opened the website
+2023-08-09 13:38:11,059  INFO:Incorrect password
+2023-08-09 13:38:12,984  INFO:Browser launched
+2023-08-09 13:38:15,676  INFO:Opened the website
+2023-08-09 13:38:33,337  ERROR:Username validation failed.
+2023-08-09 13:38:45,159  INFO:Browser launched
+2023-08-09 13:38:47,974  INFO:Opened the website
+2023-08-09 13:39:09,845  INFO:Logged in successfully!
+2023-08-09 13:39:09,977  INFO:Searched for the product
+2023-08-09 13:39:11,319  INFO:Clicked on search button
+2023-08-09 13:39:16,364  INFO:Product not found
+2023-08-09 13:39:20,856  INFO:Couldn't locate the product
+2023-08-09 13:39:25,976  ERROR:Couldn't open new tab
+2023-08-09 13:39:30,040  INFO:Browser launched
+2023-08-09 13:39:32,700  INFO:Opened the website
+2023-08-09 13:39:49,785  INFO:Logged in successfully!
+2023-08-09 13:39:49,942  INFO:Searched for the product
+2023-08-09 13:39:52,318  INFO:Clicked on search button
+2023-08-09 13:39:55,417  ERROR:Error occurred
+2023-08-09 13:40:02,613  INFO:Opened the product on a new tab
+2023-08-09 13:40:21,635  INFO:Located price.
+2023-08-09 13:40:21,686  INFO:Fetched product description
+2023-08-09 13:40:31,885  INFO:Added product to cart
+2023-08-09 13:40:47,460  INFO:Displayed offers
+2023-08-09 13:40:47,469  INFO:Navigated to review section
+2023-08-09 13:40:53,818  INFO:Opened reviews page
+2023-08-09 13:41:06,733  INFO:E-mail sent!
+2023-08-09 16:35:44,958  INFO:Browser launched
+2023-08-09 16:35:48,467  INFO:Opened the website
+2023-08-09 16:35:50,781  INFO:Incorrect mobile number/e-mail ID
+2023-08-09 16:35:52,959  INFO:Browser launched
+2023-08-09 16:35:56,171  INFO:Opened the website
+2023-08-09 16:36:14,376  INFO:Incorrect password
+2023-08-09 16:36:16,534  INFO:Browser launched
+2023-08-09 16:36:19,845  INFO:Opened the website
+2023-08-09 16:36:37,142  ERROR:Username validation failed.
+2023-08-09 16:36:44,028  INFO:Browser launched
+2023-08-09 16:36:47,579  INFO:Opened the website
+2023-08-09 16:37:05,206  INFO:Logged in successfully!
+2023-08-09 16:37:05,333  INFO:Searched for the product
+2023-08-09 16:37:06,602  INFO:Clicked on search button
+2023-08-09 16:37:10,847  INFO:Product not found
+2023-08-09 16:37:15,382  INFO:Couldn't locate the product
+2023-08-09 16:37:20,389  ERROR:Couldn't open new tab
+2023-08-09 16:37:24,551  INFO:Browser launched
+2023-08-09 16:37:27,970  INFO:Opened the website
+2023-08-09 16:37:45,527  INFO:Logged in successfully!
+2023-08-09 16:37:45,744  INFO:Searched for the product
+2023-08-09 16:37:50,137  INFO:Clicked on search button
+2023-08-09 16:37:53,248  ERROR:Error occurred
+2023-08-09 16:37:59,473  INFO:Opened the product on a new tab
+2023-08-09 16:38:01,818  INFO:Couldn't get availability details
+2023-08-09 16:38:01,891  INFO:Fetched product description
+2023-08-09 16:38:12,145  INFO:Added product to cart
+2023-08-09 16:38:27,719  INFO:Displayed offers
+2023-08-09 16:38:27,727  INFO:Navigated to review section
+2023-08-09 16:38:34,665  INFO:Opened reviews page
+2023-08-09 16:38:49,179  INFO:E-mail sent!
