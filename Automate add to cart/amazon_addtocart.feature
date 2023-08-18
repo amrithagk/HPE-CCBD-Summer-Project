@@ -27,6 +27,6 @@ Feature: Login to Amazon e commerce and product purchase
   Examples:
     |mobileno|password|username|product|
     #|1|2|3|Sony 55inch TV|
+    |7019522431|123|Nisarga|Sony 55inch TV|
+    #|7019522431|Nisarga@123|Nisarga|iuarwgha|
     |7019522431|Nisarga@123|Nisarga|Sony 55inch TV|
-    #|7019522431|Nisarga@123|Nisarga|Sony 55inch TV|
-    #|7019522431|Nisarga@123|Nisarga|Sony 55inch TV|
