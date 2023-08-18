@@ -24,7 +24,7 @@ Feature: Login to Amazon e commerce and product purchase
 
     And send email notification
 
-    Examples:
-      |mobileno|password|username|product|
-      |7019522431|abc|Nisarga|Sony 55inch TV|
+  Examples:
+    |mobileno|password|username|product|
+    |7019522431|abc|Nisarga|Sony 55inch TV|
       //add test cases after line 28 in the same order as given on line 28
