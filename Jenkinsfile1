@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage("CLONE") {
             steps {
-                git branch: 'sinchana', credentialsId: 'YOUR_CREDENTIALS_ID', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
+                git branch: 'sinchana', url: 'https://github.com/amrithagk/HPE-CCBD-Summer-Project.git'
             }
         }
 
